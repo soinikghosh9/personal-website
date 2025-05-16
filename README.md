@@ -3,10 +3,7 @@
 This repository contains the code for a personal portfolio website. You can use this as a template to create and host your own portfolio online for free using GitHub Pages.
 
 **Live Demo:** [https://soinikghosh9.github.io/personal-website/](https://soinikghosh9.github.io/personal-website/)
-*(Replace this with the actual link once your site is live)*
 
-![Screenshot of the Portfolio Website](images/screenshot.png)
-*(Optional: Add a screenshot of your website to the `images` folder and reference it here. Name it `screenshot.png` or similar.)*
 
 ## Features
 
