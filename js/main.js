@@ -26,20 +26,19 @@ document.querySelectorAll('#navbar a[href^="#"]').forEach(anchor => {
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-            revealObserver.unobserve(entry.target); // Reveal only once
+            entry.target.classList.add('is-visible'); // Standardized on is-visible
+            revealObserver.unobserve(entry.target); 
         }
     });
 }, {
     threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    rootMargin: '0px 0px -40px 0px'
 });
 
 document.addEventListener('DOMContentLoaded', () => {
     // Dynamically attach reveal to major sections to ensure holistic scroll animations
-    const elements = document.querySelectorAll('section, .project-card, .bento__item');
+    const elements = document.querySelectorAll('section, .reveal');
     elements.forEach(el => {
-        el.classList.add('reveal');
         revealObserver.observe(el);
     });
 });
