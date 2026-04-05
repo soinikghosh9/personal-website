@@ -1,3 +1,9 @@
+// Update current year in footer
+const currentYearSpan = document.getElementById('current-year');
+if (currentYearSpan) {
+    currentYearSpan.textContent = new Date().getFullYear();
+}
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('#navbar a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -6,7 +12,7 @@ document.querySelectorAll('#navbar a[href^="#"]').forEach(anchor => {
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             const navbarHeight = document.getElementById('navbar') ? document.getElementById('navbar').offsetHeight : 70; 
-            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20; // 20px buffer
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - (navbarHeight + 40);
 
             window.scrollTo({
                 top: targetPosition,
@@ -16,72 +22,47 @@ document.querySelectorAll('#navbar a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Highlight active navigation link based on scroll position
-const sections = document.querySelectorAll('main section[id]');
-const navLiAnchors = document.querySelectorAll('#navbar ul li a');
-const navHeight = document.getElementById('navbar') ? document.getElementById('navbar').offsetHeight : 70; 
-
-window.addEventListener('scroll', () => {
-    let currentSectionId = '';
-    let minDistance = Infinity; 
-
-    sections.forEach(section => {
-        const sectionTopViewport = section.getBoundingClientRect().top;
-        const activationPoint = navHeight + 60; 
-
-        if (sectionTopViewport < activationPoint + (section.offsetHeight * 0.5) && sectionTopViewport + section.offsetHeight > activationPoint - (section.offsetHeight * 0.2)) {
-            const distanceToActivation = Math.abs(sectionTopViewport - activationPoint);
-            if (distanceToActivation < minDistance) {
-                minDistance = distanceToActivation;
-                currentSectionId = section.getAttribute('id');
-            }
+// Intersection Observer for Reveal Animations (Apple-style entrance)
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            revealObserver.unobserve(entry.target); // Reveal only once
         }
     });
-    
-    if (!currentSectionId && sections.length > 0) {
-        if (window.pageYOffset < sections[0].offsetTop - navHeight) {
-            currentSectionId = sections[0].getAttribute('id');
-        } else {
-            for (let i = sections.length - 1; i >= 0; i--) {
-                const section = sections[i];
-                const sectionTop = section.offsetTop - navHeight - 60; 
-                if (window.pageYOffset >= sectionTop - 50) { 
-                    currentSectionId = section.getAttribute('id');
-                    break;
-                }
-            }
-        }
-        if (!currentSectionId && sections.length > 0 && window.pageYOffset > 100) {
-            for (const section of sections) {
-                if (section.getBoundingClientRect().top > navHeight - 50) { 
-                    currentSectionId = section.id;
-                    break;
-                }
-            }
-        }
-        if (!currentSectionId && sections.length > 0) {
-            currentSectionId = sections[0].getAttribute('id');
-        }
-    }
-
-    navLiAnchors.forEach(a => {
-        a.classList.remove('active');
-        if (a.getAttribute('href').substring(1) === currentSectionId) {
-            a.classList.add('active');
-        }
-    });
-
-    if (window.pageYOffset < (sections[0] ? sections[0].offsetTop - navHeight - 60 : 200) && currentSectionId !== (sections[0] ? sections[0].id : '')) {
-         if (navLiAnchors.length > 0 && sections[0]) {
-             navLiAnchors.forEach(a => a.classList.remove('active'));
-         }
-    }
+}, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
 });
 
-// Update current year in footer
-const currentYearSpan = document.getElementById('current-year');
-if (currentYearSpan) {
-    currentYearSpan.textContent = new Date().getFullYear();
-}
+document.addEventListener('DOMContentLoaded', () => {
+    // Dynamically attach reveal to major sections to ensure holistic scroll animations
+    const elements = document.querySelectorAll('section, .project-card, .bento__item');
+    elements.forEach(el => {
+        el.classList.add('reveal');
+        revealObserver.observe(el);
+    });
+});
+// Highlight active navigation link based on scroll position
+const sections = document.querySelectorAll('main section[id]');
+const navLinks = document.querySelectorAll('#navbar ul li a');
 
-console.log("Portfolio JavaScript Loaded. Refined Teal & Copper Elegance theme active.");
+window.addEventListener('scroll', () => {
+    let current = "";
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - 150) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach((a) => {
+        a.classList.remove("active");
+        if (a.getAttribute("href").includes(current)) {
+            a.classList.add("active");
+        }
+    });
+});
+
+console.log("Apple Glossy Minimalism Redesign Active.");

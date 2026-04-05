@@ -7,3 +7,9 @@ Thumbs.db
 # IDE/Editor specific (examples)
 .vscode/
 .idea/
+
+# Research Identity Specific
+bg-ui.txt
+main.tex
+modify guide.txt
+.agent/

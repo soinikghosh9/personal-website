@@ -1,619 +1,669 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Soinik Ghosh - PhD Researcher in Neuroscience, Biomedical Engineering, AI, and Artist.">
-    <meta name="keywords" content="Soinik Ghosh, Neuroscience, Biomedical Engineering, AI, PhD, Researcher, Artist, Music Composer, Filmmaker, Photographer, EEG, BCI, Signal Processing">
-    <title>Soinik Ghosh - Researcher | Innovator | Artist</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="icon" href="images/favicon2.png" type="image/png"> <!-- Add your favicon -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Soinik Ghosh — Computational Neuroengineering Researcher building Intelligent Medical Systems" />
+  <title>Soinik Ghosh | Research Identity</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="icon" href="images/favicon2.png" type="image/png" />
 </head>
 <body>
+  <div id="bg-canvas" aria-hidden="true"></div>
 
-    <header id="main-header">
-        <div class="full-width-container header-bg"> <!-- This div will carry the gradient. Add position: relative; if using absolute positioning for icons -->
-            <div class="header-top-social-icons">
-                <a href="mailto:soinikghosh.rs.bme23@itbhu.ac.in" aria-label="Email IITBHU" title="Email (IITBHU)"><i class="fas fa-envelope"></i></a>
-                <a href="mailto:soinikghosh9@gmail.com" aria-label="Email Gmail" title="Email (Personal)"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/soinik-ghosh-103411270" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/soinikghosh9" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/soinikghosh9/" target="_blank" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/soinik.ghosh/" target="_blank" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://orcid.org/0009-0000-8277-8710" target="_blank" aria-label="ORCID" title="ORCID"><i class="fab fa-orcid"></i></a>
-                <a href="https://scholar.google.com/citations?user=l9U73kcAAAAJ&hl=en" target="_blank" aria-label="Google Scholar" title="Google Scholar"><i class="fab fa-google-scholar"></i></a>
-                <a href="https://www.imdb.com/name/nm14161356/" target="_blank" aria-label="IMDb" title="IMDb"><i class="fab fa-imdb"></i></a>
-                <a href="https://open.spotify.com/artist/3VprLdYpRRnk0ymHHozFOb/" target="_blank" aria-label="Spotify" title="Spotify"><i class="fab fa-spotify"></i></a>
-            </div>
-            <div class="container header-content-area">
-                <img src="images/your-photo.jpeg" alt="Soinik Ghosh" id="profile-photo">
-                <div class="header-text">
-                    <h1>Soinik Ghosh</h1>
-                    <p class="tagline">PhD Researcher | Biomedical Engineer | Neuro-AI Developer</p>
-                    <p class="sub-tagline">Neuroscience | AI | Biomedical Engineering | Music | Creative Arts | Entrepreneurship</p>
-                </div>
-            </div>
+  <!-- ══════════════════════════════════
+       NAV
+  ══════════════════════════════════ -->
+  <nav class="nav" id="navbar">
+    <div class="wrap nav__inner">
+      <a href="#top" class="nav__logo" style="opacity:0;pointer-events:none;">S.G.</a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#areas">Areas</a></li>
+        <li><a href="#systems">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#beyond">Beyond</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════
+       HERO
+  ══════════════════════════════════ -->
+  <header class="hero" id="top">
+    <div class="hero__social">
+      <a href="mailto:soinikghosh.rs.bme23@itbhu.ac.in" title="IIT-BHU Mail"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/soinik-ghosh-103411270" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/soinikghosh9" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://orcid.org/0009-0000-8277-8710" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
+      <a href="https://scholar.google.com/citations?user=l9U73kcAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+    </div>
+
+    <div class="wrap">
+      <div class="hero__grid reveal">
+        <div class="hero__img-wrap">
+          <img src="images/pic1.jpeg" alt="Soinik Ghosh" />
         </div>
-    </header>
+        <div class="hero__text">
+          <div class="hero__eyebrow-pills">
+            <span class="pill">PhD Researcher</span>
+            <span class="pill">IIT-BHU Varanasi</span>
+            <span class="pill">Biomedical Engineering</span>
+          </div>
+          <h1 class="heading-xl hero__name">Soinik Ghosh</h1>
+          <div class="hero__glass-block">
+            <p class="hero__tagline">Computational Neuroscience &nbsp;&nbsp;&middot;&nbsp;&nbsp; Clinical AI &nbsp;&nbsp;&middot;&nbsp;&nbsp; Intelligent Medical Systems</p>
+            <p class="body-lg hero__bio">I work on computational modeling of neurological diseases and physiological systems, brain-inspired AI architectures, and intelligent medical systems for diagnosis, prediction, and rehabilitation. My research focuses on epilepsy, Alzheimer’s disease, dementia, and cognitive decline using EEG and multimodal physiological signals.</p>
+          </div>
+          <div class="hero__actions">
+            <a href="documents/Soinik_Ghosh_CV.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+            <a href="#vision" class="btn btn-ghost">Research Vision</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <nav id="navbar">
-        <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>                
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#conferences">Conferences</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#artistic-works">Artistic Works</a></li>
-                <li><a href="#contact">Contact</a></li>
+  <main class="main-content">
+
+    <!-- ══════════════════════════════════
+         ABOUT / MISSION
+    ══════════════════════════════════ -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="sec-header">
+          <div>
+            <span class="label">Mission</span>
+            <h2 class="heading-lg" style="margin-top:0.5rem;color:var(--c-dark);">Decoding Neural Complexity</h2>
+          </div>
+          <span class="sec-header__count">01</span>
+        </div>
+
+        <div class="about__grid reveal">
+          <div class="about__sidebar">
+            <p class="about__lead">"My research aims to develop computational models of the human brain and physiological systems and translate these models into intelligent clinical systems."</p>
+          </div>
+          <div class="about__body">
+            <p class="body-lg" style="color:var(--c-dark);">These systems are designed to be capable of diagnosing diseases, predicting disease progression, assisting rehabilitation, and enabling seamless human-machine interaction.</p>
+            <p class="body-md" style="margin-top:1.5rem;">I am particularly interested in neurological disorders such as epilepsy, Alzheimer’s disease, dementia, and cognitive decline. Through the integration of biosignals, AI algorithms, and clinical decision systems, I aim to design overarching medical intelligence platforms and brain-inspired artificial intelligence architectures that profoundly augment clinical care.</p>
+            
+            <div style="margin-top:2.5rem; padding-left:1.5rem; border-left:4px solid var(--c-teal);">
+                <p class="body-md" style="font-weight:600; font-style:italic;">My work focuses on computational modeling of the brain, neurological diseases, and physiological systems, and translating these models into brain-inspired AI algorithms and intelligent medical systems for diagnosis, prediction, and rehabilitation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         RESEARCH VISION
+    ══════════════════════════════════ -->
+    <section class="section section--teal-lt" id="vision">
+      <div class="wrap">
+        <div class="sec-header">
+          <div>
+            <span class="label">Objectives</span>
+            <h2 class="heading-lg" style="margin-top:0.5rem;">Core Research Vision</h2>
+          </div>
+          <span class="sec-header__count">02</span>
+        </div>
+
+        <div class="vision-grid reveal">
+          <div class="vision-card">
+            <div class="vision-card__icon"><i class="fas fa-brain"></i></div>
+            <h3 class="vision-card__title">Brain Dynamics Modeling</h3>
+            <p class="vision-card__text">Developing mathematical frameworks to characterize seizures and neurodegeneration as shifts in high-dimensional nonlinear state-spaces.</p>
+          </div>
+          <div class="vision-card">
+            <div class="vision-card__icon"><i class="fas fa-microchip"></i></div>
+            <h3 class="vision-card__title">Cognitive Neuro-Adaptive AI</h3>
+            <p class="vision-card__text">Building patient-specific AI agents that learn from continuous biosignal streams to predict neurological events before they manifest.</p>
+          </div>
+          <div class="vision-card">
+            <div class="vision-card__icon"><i class="fas fa-stethoscope"></i></div>
+            <h3 class="vision-card__title">Medical Intelligence Platforms</h3>
+            <p class="vision-card__text">Synthesizing edge-AI hardware with cloud-native medical intelligence to create truly intelligent, point-of-care clinical diagnostics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         RESEARCH AREAS
+    ══════════════════════════════════ -->
+    <section class="section" id="areas">
+      <div class="wrap">
+        <div class="sec-header">
+          <div>
+            <span class="label">Domains of Expertise</span>
+            <h2 class="heading-lg" style="margin-top:0.5rem;">Research Areas</h2>
+          </div>
+          <span class="sec-header__count">03</span>
+        </div>
+
+        <div class="areas-grid reveal">
+          <!-- Pillar 1 -->
+          <div class="area-card">
+            <h3 class="area-card__title">Computational Modeling of Neurological Disorders</h3>
+            <ul class="area-list">
+              <li>Epilepsy</li>
+              <li>Alzheimer’s</li>
+              <li>Dementia</li>
+              <li>Cognitive decline</li>
+              <li>Brain network modeling</li>
             </ul>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="area-card">
+            <h3 class="area-card__title">Computational Modeling of Physiological Systems</h3>
+            <ul class="area-list">
+              <li>Brain dynamics</li>
+              <li>Cardiovascular signals</li>
+              <li>Multimodal biosignals</li>
+              <li>Dynamical systems modeling</li>
+              <li>Digital twins</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="area-card">
+            <h3 class="area-card__title">Cognitive Diagnosis &amp; Rehabilitation</h3>
+            <ul class="area-list">
+              <li>Cognitive assessment systems</li>
+              <li>Cognitive rehabilitation platforms</li>
+              <li>BCI rehabilitation</li>
+              <li>VR rehabilitation</li>
+              <li>Assistive communication systems</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="area-card">
+            <h3 class="area-card__title">Brain-Inspired AI &amp; Medical Intelligence Systems</h3>
+            <ul class="area-list">
+              <li>Brain-inspired AI architectures</li>
+              <li>Generative models for biosignals</li>
+              <li>Clinical decision support algorithms</li>
+              <li>Edge AI medical devices</li>
+              <li>Medical intelligence platforms</li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </div>
+    </section>
 
-    <main>
-        <section id="about" class="section-padding">
-            <div class="container">
-                <h2 class="section-title"><span>About Me</span></h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            I am a PhD researcher in Biomedical Engineering at IIT BHU, working at the intersection of neuroscience, biomedical signal processing, and artificial intelligence. My work focuses on AI-driven analysis of neural and biomedical time-series data, including EEG-based seizure forecasting, Alzheimer’s and dementia diagnosis, and biomarker detection for neurological disorders. I develop disease-specific AI frameworks and brain-inspired computational models to capture neural dynamics and improve diagnostic reliability, interpretability, and cognitive rehabilitation with detection.
-                        </p>
-                        <p>
-                            In parallel, I design AI-enabled biomedical systems and devices, and deploy AI models in production, integrating advanced signal processing with real-world healthcare technologies for physiological monitoring and assistive applications. Equally wired into music, film, and art, I play multiple instruments, compose, shoot and explore how creativity heals.
-                        </p>
-                        <div class="links-section">
-                            <a href="documents/Soinik_Ghosh_CV.pdf" target="_blank" class="btn btn-primary">View Full CV (PDF)</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="skills" class="section-padding">
-            <div class="container">
-                <h2 class="section-title"><span>Skills & Expertise</span></h2>
-                <div class="skills-container">
-                    <div class="skill-category card">
-                        <h3>Technical & Research</h3>
-                        <ul>
-                            <li><i class="fas fa-cogs skill-icon"></i><strong>Computational & AI:</strong> PyTorch, Deep Learning, Graph Neural Networks (GNNs), Generative Models, AI Agents, Computer Vision, Signal (EEG/ECG) & Image Processing</li>
-                            <li><i class="fas fa-code skill-icon"></i><strong>Development:</strong> Software Development, Hardware + Software + AI integration, Python, MATLAB, C++, C#, Java, HTML/CSS, React, Typescript, GCP, UI/UX</li>
-                            <li><i class="fas fa-microchip skill-icon"></i><strong>Engineering:</strong> Biomedical Device Design, Hardware PCB Design, BCI Systems, IoT & Embedded Systems, Edge AI, VR/XR (Unity)</li>
-                            <li><i class="fas fa-vial skill-icon"></i><strong>Wet Lab & Biology:</strong> Cell Culture, Molecular Biology, Experimental Design, Animal Studies</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category card">
-                        <h3>Core Competencies</h3>
-                        <ul>
-                            <li><i class="fas fa-lightbulb skill-icon"></i>Problem Solving</li>
-                            <li><i class="fas fa-chart-line skill-icon"></i>Critical Thinking</li>
-                            <li><i class="fas fa-rocket skill-icon"></i>Quick Learning</li>
-                            <li><i class="fas fa-users skill-icon"></i>Leadership</li>
-                            <li><i class="fas fa-pen-nib skill-icon"></i>Scientific Writing</li>
-                            <li><i class="fas fa-comments skill-icon"></i>Communication</li>
-                        </ul>
-                    </div>
-                </div>
-                <h3 class="sub-section-title">Research Interests</h3>
-                <div class="tag-list">
-                    <span>Biomedical Signal & Image Processing</span>
-                    <span>Neuroimaging</span>
-                    <span>Biomedical Devices & Wearable sensors</span>
-                    <span>Computational Neuroscience</span>
-                    <span>BCI</span>
-                    <span>Neurorehabilitation</span>
-                    <span>Assistive Devices</span>
-                    <span>Deep Learning</span>
-                    <span>Tissue Engineering</span>
-                    <span>Generative AI</span>
-                    <span>Bioinformatics</span>
-                    <span>Cognitive Rehabilitation</span>
-                    <span>Protein & Genetic Engineering</span>
-                    <span>Biomaterials</span>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="projects" class="section-padding alt-bg">
-            <div class="container">
-                <h2 class="section-title"><span>Projects</span></h2>
-                <div class="grid-layout columns-2">
-                    <article class="card project-item">
-                        <div class="card-content">
-                            <h3>Towards Reliable Seizure Forecasting & Diagnosis with Non-Invasive Biosignals</h3>
-                            <p class="meta">IIT-BHU, IMS-BHU</p>
-                            <p>Developing advanced Epileptic Seizure Forecasting algorithms with probabilistic frameworks, aiming to improve Epilepsy Diagnosis and patient quality of life through timely intervention.</p>
-                        </div>
-                    </article>
-                    <article class="card project-item">
-                        <div class="card-content">
-                            <h3>A Generative AI model for Patient-specific high-fidelity Synthetic EEG data Generation</h3>
-                            <p class="meta">IIT-BHU</p>
-                            <p>Developing a Diffusion-based Generative AI model for high-fidelity Synthetic EEG data Generation, particularly for Seizure Patients. <a href="https://doi.org/10.1016/j.compbiomed.2025.111398" target="_blank">GenEEG (Computers in Biology & Medicine, 2025, IF: 6.3)</a></p>
-                        </div>                        
-                    </article>
-                    <article class="card project-item">
-                        <div class="card-content">
-                            <h3>Interictal Network Dynamics — Characterizing IEDs as Dynamic Network Events</h3>
-                            <p class="meta">IIT-BHU, IMS-BHU</p>
-                            <p>Interictal Epileptiform Discharges as Dynamic Network Events: A Multimodal Source-Connectivity Approach with Graph Neural Networks.</p>
-                        </div>
-                    </article>
-                    <article class="card project-item">
-                        <div class="card-content">
-                            <h3>Neuro-ADEPT: A Neuro-Adaptive Deep Learning Framework</h3>
-                            <p class="meta">IIT-BHU</p>
-                            <p>Brain inspired neural network architecture design for interpretable seizure risk stratification. <a href="https://github.com/soinikghosh9/Neuro-ADEPT" target="_blank">GitHub repository</a></p>
-                        </div>
-                    </article>
-                    <article class="card project-item">
-                        <div class="card-content">
-                            <h3>GemSAM: An Agentic Framework for Explainable Multi-Modal Medical Image Analysis on Edge</h3>
-                            <p class="meta">Google DeepMind, Kaggle MedGemma Impact Challenge 2026</p>
-                            <p><a href="https://github.com/soinikghosh9/GemSAM" target="_blank">GitHub repository</a></p>
-                        </div>
-                    </article>
-                    <article class="card project-item">
-                        <div class="card-content">
-                            <h3>Motor Imagery based Prosthetic arm control in real time with EEG & BCI</h3>
-                            <p class="meta">IIT-BHU</p>
-                            <p>Designing a BCI system translating motor imagery EEG signals into intuitive real-time control for prosthetic arms.</p>
-                        </div>
-                    </article>
-                    <article class="card project-item">
-                        <div class="card-content">
-                            <h3>VR-infused robotic exo-suit for Stroke Rehabilitation</h3>
-                            <p class="meta">IIT-BHU (PRAGATI Hackathon 2023 Winner)</p>
-                            <p>Creating an immersive VR environment with a robotic exoskeleton for engaging stroke patient rehabilitation.</p>
-                        </div>
-                    </article>
-                    <article class="card project-item">
-                        <div class="card-content">
-                            <h3>Non-invasive Ultrasound imaging for cardiovascular disease detection</h3>
-                            <p class="meta">Smart India Hackathon (Winner)</p>
-                            <p>Developing a non-invasive ultrasound imaging solution for improved cardiovascular disease detection methods.</p>
-                        </div>
-                    </article>
-                    <article class="card project-item">
-                        <div class="card-content">
-                            <h3>CogniDhi: AI-powered cognitive health platform & personalized brain fitness for all ages</h3>
-                            <p class="meta">Stanford Longevity Design Challenge 2025–26</p>
-                            <p>Early detection of cognitive decline and personalised AI tasks for enhancing weaker brain functionalities, with a social platform for networking and professional help.</p>
-                        </div>
-                    </article>
-                    <article class="card project-item">
-                        <div class="card-content">
-                            <h3>HippoSphere AI: Automated Monitoring and Behavioral Analysis of Captive Pygmy Hippopotamuses</h3>
-                            <p class="meta">Moodeng AI Challenge, MIT Media Lab</p>
-                            <p>Automated Monitoring and Behavioral Analysis of Captive Animals Using Lightweight Deep Learning and Sustainable Computer Vision. <a href="http://github.com/soinikghosh9/hipposphere-ai" target="_blank">GitHub repository</a></p>
-                        </div>                                                 
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section-padding">
-            <div class="container">
-                <h2 class="section-title"><span>Experience</span></h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-icon-outer">
-                            <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
-                        </div>
-                        <div class="timeline-content-wrapper">
-                            <div class="timeline-content card">
-                                <h3>Full-Time Research Scholar</h3>
-                                <p class="meta">School of Biomedical Engineering, IIT-BHU Varanasi | 2023 - Present</p>
-                                <p>Doctoral research focusing on BCI, Neuroscience & AI applications in biomedical engineering along with Teaching Assistantship. Involves Experimental Design, Data Collection, Data Analysis, Algorithm Development, Scientific Writing & Teaching.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon-outer">
-                            <div class="timeline-icon"><i class="fas fa-rocket"></i></div>
-                        </div>
-                        <div class="timeline-content-wrapper">
-                            <div class="timeline-content card">
-                                <h3>Co-Founder</h3>
-                                <p class="meta">Hridae Medical Technologies | Medical Devices Start Up</p>
-                                <p>Engineer & Developer, working on Cardiovascular health and Neurotechnologies.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon-outer">
-                           <div class="timeline-icon"><i class="fas fa-cogs"></i></div>
-                       </div>
-                       <div class="timeline-content-wrapper">
-                           <div class="timeline-content card">
-                               <h3>Workshop: 'g.tec BCI & Neurotechnology Spring School 2025'</h3>
-                               <p class="meta">g.tec medical engineering GmbH, Austria | 2025</p>
-                               <p>Completed the extensive curriculum of the g.tec BCI & Neurotechnology Spring School 2025 and contributed to the BR41N.IO Hackathon for practical application and innovation. Intensive workshop on recent advancements in Neuroscience, BCI, AI, Invasive and Non-invasive Neurotechnologies, with lectures from leading researchers & Clinicians worldwide.</p>
-                           </div>
-                       </div>
-                   </div>               
-                    <div class="timeline-item">
-                        <div class="timeline-icon-outer">
-                            <div class="timeline-icon"><i class="fas fa-cogs"></i></div>
-                        </div>
-                        <div class="timeline-content-wrapper">
-                            <div class="timeline-content card">
-                                <h3>Workshop: Neurogati/CNS Lab - Brain Modeling</h3>
-                                <p class="meta">IIT Madras</p>
-                                <p>Computational modeling of human brain & Brain-inspired AI models.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                         <div class="timeline-icon-outer">
-                            <div class="timeline-icon"><i class="fas fa-cogs"></i></div>
-                        </div>
-                        <div class="timeline-content-wrapper">
-                            <div class="timeline-content card">
-                                <h3>Workshop: 'SERB KARYASHALA'</h3>
-                                <p class="meta">AI in Human Brain Computer Interaction, Machine Learning & Signal Processing | IIT Roorkee | 2024</p>
-                                <p>Intensive workshop on advancements in AI, ML, and signal processing for BCIs.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon-outer">
-                            <div class="timeline-icon"><i class="fas fa-flask"></i></div>
-                        </div>
-                        <div class="timeline-content-wrapper">
-                            <div class="timeline-content card">
-                                <h3>Skill Development Program by CSIR-IICB</h3>
-                                <p class="meta">Molecular Cloning, Protein Expression & Characterization | CSIR-IICB, Kolkata | 2023</p>
-                                <p>Hands-on training in wet lab techniques for cancer biology and inflammatory disorders.</p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="timeline-item">
-                        <div class="timeline-icon-outer">
-                            <div class="timeline-icon"><i class="fas fa-paint-brush"></i></div>
-                        </div>
-                        <div class="timeline-content-wrapper">
-                            <div class="timeline-content card">
-                                <h3>Musician, Composer, Film Maker</h3>
-                                <p class="meta">Freelance/Independent</p>
-                                <p>Creating original music compositions and producing short films, fostering creativity and storytelling.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="section-padding alt-bg">
-            <div class="container">
-                <h2 class="section-title"><span>Education</span></h2>
-                <div class="grid-layout columns-2">
-                    <article class="card education-item">
-                        <div class="card-content">
-                            <i class="fas fa-university edu-icon"></i>
-                            <h3>PhD in Biomedical Engineering</h3>
-                            <p class="meta">IIT-BHU, Varanasi | 2023 - Present | CGPA: 9.6/10</p>
-                            <p>Courses: Biomedical Signal & Image Processing, Biosensors, AI, Neuroscience, Instrumentation, Mathematical Modelling.</p>
-                        </div>
-                    </article>
-                    <article class="card education-item">
-                         <div class="card-content">
-                            <i class="fas fa-award edu-icon"></i>
-                            <h3>GATE Qualified (XL)</h3>
-                            <p class="meta">2023 | Score: 503, AIR: 1313</p>
-                        </div>
-                    </article>
-                    <article class="card education-item">
-                        <div class="card-content">
-                             <i class="fas fa-graduation-cap edu-icon"></i>
-                            <h3>M.Sc in Physiology (Neuroscience)</h3>
-                            <p class="meta">University of Calcutta | 2021 | 74.9%</p>
-                            <p>Master's Thesis: "Neuropsychophysiological Behaviour of Adenosine: Crosstalks between Neurotransmitters"</p>
-                        </div>
-                    </article>
-                    <article class="card education-item">
-                        <div class="card-content">
-                            <i class="fas fa-graduation-cap edu-icon"></i>
-                            <h3>B.Sc in Human Physiology</h3>
-                            <p class="meta">Surendranath College, University of Calcutta | 2019 | 58.8%</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="publications" class="section-padding">
-            <div class="container">
-                <h2 class="section-title"><span>Publications</span></h2>
-                <div class="list-layout">
-
-                    <article class="list-item card">
-                        <i class="fas fa-file-alt list-icon"></i>
-                        <div class="publication-details">
-                            <p>
-                                <a href="https://doi.org/10.1016/j.compbiomed.2025.111398" target="_blank" rel="noopener noreferrer">
-                                    'GenEEG: Improving epileptic EEG detection through patient-adaptive latent diffusion and continual learning'
-                                </a>
-                            </p>
-                            <p class="publication-conference">Computers in Biology & Medicine, 2025 (IF: 6.3)</p>
-                        </div>
-                    </article>
-
-                    <article class="list-item card">
-                        <i class="fas fa-file-alt list-icon"></i>
-                        <div class="publication-details">
-                            <p>
-                                'A Probabilistic Framework For Epileptic Seizure Forecasting Combining Dynamic State Transitions and Patient-Adaptive AI with EEG and ECG'
-                            </p>
-                            <p class="publication-conference">Journal Article (In peer-review)</p>
-                        </div>
-                    </article>
-
-                    <article class="list-item card">
-                        <i class="fas fa-file-alt list-icon"></i>
-                        <div class="publication-details">
-                            <p>
-                                'Decoding the Neural Dynamics of Motor Imagery and Execution: An EEG-Based Investigation into Conscious Hand Movement Representation'
-                            </p>
-                            <p class="publication-conference">Springer MBCC 2025 | In Press</p>
-                        </div>
-                    </article>
-
-                    <article class="list-item card">
-                        <i class="fas fa-file-alt list-icon"></i>
-                        <div class="publication-details">
-                            <p>
-                                <a href="https://ieeexplore.ieee.org/abstract/document/10868917" target="_blank" rel="noopener noreferrer">
-                                    'Real-Time Brain Signals Monitoring System Using Single-Channel EEG for BCI Applications'
-                                </a>
-                            </p>
-                            <p class="publication-conference">2024 2nd International Conference on Advancements and Key Challenges in Green Energy and Computing (AKGEC)</p>
-                        </div>
-                    </article>
-
-                    <article class="list-item card">
-                        <i class="fas fa-file-alt list-icon"></i>
-                        <div class="publication-details">
-                            <p>
-                                <a href="https://ieeexplore.ieee.org/abstract/document/10896072" target="_blank" rel="noopener noreferrer">
-                                    'Development of a Haptic Exo-Suit with Tactile Feedback in Hand Rehabilitation'
-                                </a>
-                            </p>
-                            <p class="publication-conference">2024 IEEE International Conference on Intelligent Signal Processing and Effective Communication Technologies (INSPECT)</p>
-                        </div>
-                    </article>
-
-                    <article class="list-item card">
-                        <i class="fas fa-file-alt list-icon"></i>
-                        <div class="publication-details">
-                            <p>
-                                <a href="https://github.com/soinikghosh9/Neuro-ADEPT" target="_blank" rel="noopener noreferrer">
-                                    'Neuro-ADEPT: A Neuro-Adaptive Deep Learning Framework for EEG Analysis and Neurological Disorder Modeling'
-                                </a>
-                            </p>
-                            <p class="publication-conference">IEEE EMBC 2026 (Under review)</p>
-                        </div>
-                    </article>
-
-                    <article class="list-item card">
-                        <i class="fas fa-file-alt list-icon"></i>
-                        <div class="publication-details">
-                            <p>
-                                <a href="https://doi.org/10.1109/ICCSAI64074.2025.11064720" target="_blank" rel="noopener noreferrer">
-                                    'A Hybrid Classical-Quantum Model for Enhanced MRI-Based Brain Tumor Classification Using Transfer Learning and Quantum Neural Networks'
-                                </a>
-                            </p>
-                            <p class="publication-conference">IEEE ICCSAI 2025</p>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-
-        <section id="conferences" class="section-padding">
-            <div class="container">
-                <h2 class="section-title"><span>Conferences & Presentations</span></h2>
-                <div class="list-layout">
-
-                    <article class="list-item card">
-                        <i class="fas fa-chalkboard-teacher list-icon"></i>
-                        <div class="conference-details">
-                            <p>
-                                'Decoding the Neural Dynamics of Motor Imagery and Execution: An EEG-Based Investigation into Conscious Hand Movement Representation'
-                            </p>
-                            <p class="conference-name">Mind, Brain, and Consciousness Conference (MBCC), IIT Mandi</p>
-                            <p class="conference-year">2025</p>
-                        </div>
-                    </article>
-
-                    <article class="list-item card">
-                        <i class="fas fa-chalkboard-teacher list-icon"></i>
-                        <div class="conference-details">
-                            <p>
-                                'Real-Time Brain Signals Monitoring System Using Single-Channel EEG for BCI Applications'
-                            </p>
-                            <p class="conference-name">IEEE Advancements and Challenges in Green Energy and Computing (AKGEC)</p>
-                            <p class="conference-year">2024</p>
-                        </div>
-                    </article>
-
-                    <article class="list-item card">
-                        <i class="fas fa-chalkboard-teacher list-icon"></i>
-                        <div class="conference-details">
-                            <p>
-                                'Improving Fine Motor Skills using AI-driven Robotic Exo-Suit with Flexible Tactile Sensors interfaced with VR-infused Biofeedback for Stroke Rehabilitation'
-                            </p>
-                            <p class="conference-name">International Conference on Recent Advances in Fluid Mechanics and Nanoelectronics (ICRAFMN)</p>
-                            <p class="conference-year">2024</p>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-
-
-        <section id="awards" class="section-padding">
-            <div class="container">
-                <h2 class="section-title"><span>Awards & Recognition</span></h2>
-                 <div class="grid-layout columns-2">
-                    <article class="card award-item">
-                        <div class="award-icon"><i class="fas fa-trophy"></i></div>
-                        <div class="card-content">
-                            <h3>Smart India Hackathon (Winner-Hardware Edition 2024)</h3>
-                            <p class="meta">Govt. of India | SIHH 2024</p>
-                            <p>"Non-invasive imaging for cardiovascular disease detection"</p>
-                        </div>
-                    </article>
-                    <article class="card award-item">
-                        <div class="award-icon"><i class="fas fa-medal"></i></div>
-                        <div class="card-content">
-                            <h3>PRAGATI Hackathon (2nd Runner up)</h3>
-                            <p class="meta">TIH Dristi IHUB & IIT Jodhpur | 2023</p>
-                            <p>"XR-infused robotic exo-suit for upper-limbStoke Rehabilitation"</p>
-                        </div>
-                    </article>
-                    <article class="card award-item">
-                        <div class="award-icon"><i class="fas fa-certificate"></i></div>
-                        <div class="card-content">
-                            <h3>GATE Qualified 2023 (Life Sciences)</h3>
-                            <p class="meta">IIT Kanpur | AIR: 1313</p>
-                            <p>Qualified in Life Sciences with a score of 503.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>        
-
-        <section id="artistic-works" class="section-padding alt-bg">
-            <div class="container">
-                <h2 class="section-title"><span>Artistic Endeavors</span></h2>
-                <p class="section-intro">My creative pursuits in music, film, photography, and painting are integral to my identity, offering different lenses through which to explore and express ideas.</p>
-                <div class="grid-layout columns-3">
-                     <article class="card artistic-item">
-                        <div class="artistic-icon-container"><i class="fas fa-music"></i></div>
-                        <div class="card-content">
-                            <h3>Music Composing</h3>
-                            <p>Composing original music across various moods and styles, exploring soundscapes and emotional narratives.</p>
-                            
-                            <h4 class="artistic-subheading">Solo</h4>
-                            <a href="https://open.spotify.com/artist/3VprLdYpRRnk0ymHHozFOb/" target="_blank" class="btn btn-secondary btn-small">Spotify <i class="fab fa-spotify"></i></a>
-                            <a href="https://gaana.com/artist/soinik-ghosh" target="_blank" class="btn btn-secondary btn-small">Gaana <i class="fas fa-headphones-alt"></i></a>
-
-                            <h4 class="artistic-subheading">Psychedelics (Band)</h4>
-                            <a href="https://open.spotify.com/artist/5v7CLLlfIqotHKDULTut2w" target="_blank" class="btn btn-secondary btn-small">Spotify <i class="fab fa-spotify"></i></a>
-                            <a href="https://www.youtube.com/@OfficialPsychedelics" target="_blank" class="btn btn-secondary btn-small">YouTube <i class="fab fa-youtube"></i></a>
-                            
-                            <h4 class="artistic-subheading">neonClouds (Band)</h4>
-                            <a href="https://www.instagram.com/neon_clouds9/" target="_blank" class="btn btn-secondary btn-small">Instagram <i class="fab fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/@neon_Clouds-l5h" target="_blank" class="btn btn-secondary btn-small">YouTube <i class="fab fa-youtube"></i></a>
-                        </div>
-                    </article>
-                    <article class="card artistic-item">
-                        <div class="artistic-icon-container"><i class="fas fa-film"></i></div>
-                        <div class="card-content">
-                            <h3>Filmmaking</h3>
-                            <p>Engaging in the art of storytelling through film, from conceptualization to the final edit.</p>
-                            <a href="https://www.imdb.com/name/nm14161356/" target="_blank" class="btn btn-secondary btn-small">IMDb Profile <i class="fab fa-imdb"></i></a>
-                            
-                            <h4 class="artistic-subheading">Short Films & Videos:</h4>
-                            <a href="https://www.youtube.com/watch?v=DJnyU5DOGh8" target="_blank" class="btn btn-secondary btn-small">Watch Film 1 <i class="fab fa-youtube"></i></a>
-                            <a href="https://www.youtube.com/watch?v=XunhhlCo3Go" target="_blank" class="btn btn-secondary btn-small">Watch Film 2 <i class="fab fa-youtube"></i></a>
-                            <a href="https://www.youtube.com/watch?v=yvcLy5v9uQo" target="_blank" class="btn btn-secondary btn-small">Watch Film 3 <i class="fab fa-youtube"></i></a>
-                            <a href="https://youtu.be/zeuo6JNbgdc?si=hqa8lgP-ziv1bw0Q" target="_blank" class="btn btn-secondary btn-small">Watch Film 4 <i class="fab fa-youtube"></i></a>
-                            <a href="https://youtu.be/mVTX1Sdc1w0?si=5Zocb53sIVj6oVKD" target="_blank" class="btn btn-secondary btn-small">Watch Film 5 <i class="fab fa-youtube"></i></a>
-                        </div>
-                    </article>
-                    <article class="card artistic-item">
-                        <div class="artistic-icon-container"><i class="fas fa-camera-retro"></i></div>
-                        <div class="card-content">
-                            <h3>Photography, Painting & Audio-Visual Arts</h3>
-                            <p>Capturing moments and expressing abstract concepts through visual arts like photography and painting.</p>
-                             <a href="https://www.instagram.com/soinikghosh9/" target="_blank" class="btn btn-secondary btn-small">View on Instagram <i class="fas fa-arrow-right"></i></a>
-                             <a href="https://www.instagram.com/reel/DJR9e1_yos5/?igsh=bXVzMnplczYydnc1" target="_blank" class="btn btn-secondary btn-small">Audio-Visual Art with BCI<i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-                </div>
-                 <h3 class="sub-section-title">Other Interests</h3>
-                 <div class="tag-list">
-                    <span>Storytelling</span>
-                    <span>Creative Writing</span>
-                    <span>Wildlife Exploration</span>
-                    <span>Photography</span>
-                    <span>Mindfulness</span>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="contact" class="section-padding alt-bg">
-            <div class="container">
-                <h2 class="section-title"><span>Get in Touch</span></h2>
-                <p class="section-intro">I'm enthusiastic about discussing research collaborations, innovative projects, or artistic endeavors. Please feel free to connect!</p>
-                <div class="contact-container card">
-                    <div class="contact-info">
-                        <h3>Contact Details</h3>
-                        <p><i class="fas fa-map-marker-alt contact-icon"></i> Varanasi, Kolkata, India</p>
-                        <p><i class="fas fa-phone contact-icon"></i> <a href="tel:+919875681292">+91 9875681292</a></p>
-                        <p><i class="fas fa-envelope contact-icon"></i> <a href="mailto:soinikghosh.rs.bme23@itbhu.ac.in">soinikghosh.rs.bme23@itbhu.ac.in</a></p>
-                        <p><i class="fas fa-envelope contact-icon"></i> <a href="mailto:soinikghosh9@gmail.com">soinikghosh9@gmail.com</a></p>
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/soinik-ghosh-103411270" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://github.com/soinikghosh9" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://www.instagram.com/soinikghosh9/" target="_blank" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/soinik.ghosh/" target="_blank" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://orcid.org/0009-0000-8277-8710" target="_blank" aria-label="ORCID" title="ORCID"><i class="fab fa-orcid"></i></a>
-                            <a href="https://scholar.google.com/citations?user=l9U73kcAAAAJ&hl=en" target="_blank" aria-label="Google Scholar" title="Google Scholar"><i class="fab fa-google-scholar"></i></a>
-                            <a href="https://www.imdb.com/name/nm14161356/" target="_blank" aria-label="IMDb" title="IMDb"><i class="fab fa-imdb"></i></a>
-                            <a href="https://open.spotify.com/artist/3VprLdYpRRnk0ymHHozFOb/" target="_blank" aria-label="Spotify" title="Spotify"><i class="fab fa-spotify"></i></a>
-                        </div>
-                         <h3>Languages</h3>
-                        <p>English, Bengali, Hindi</p>
-                    </div>
-                    <div class="contact-form-placeholder">
-                        <h3>Send a Message</h3>
-                        <form action="https://formspree.io/f/myzwowdw" method="POST">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="_replyto" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="4" required></textarea>
-                            </div>
-                            <input type="hidden" name="_subject" value="New Contact from Soinik Ghosh Portfolio!">
-                            <!-- Optional: Redirect to a thank you page after submission -->
-                            <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html"> -->
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="main-footer">
-        <div class="container">
-            <p>© <span id="current-year"></span> Soinik Ghosh. All Rights Reserved.</p>
-            <p>Innovating at the Nexus of Science & Art.</p>
+    <!-- ══════════════════════════════════
+         SELECTED RESEARCH & SYSTEMS
+    ══════════════════════════════════ -->
+    <section class="section section--dark" id="systems">
+      <div class="wrap">
+        <div class="sec-header sec-header--dark">
+          <div>
+            <span class="label">Systems Development</span>
+            <h2 class="heading-lg" style="margin-top:0.5rem;color:var(--c-white);">Selected Research &amp; Systems</h2>
+          </div>
+          <span class="sec-header__count" style="color:#fff;">04</span>
         </div>
-    </footer>
 
-    <script src="js/main.js"></script>
+        <!-- System clusters -->
+        <div class="systems-cluster reveal">
+            <h3 class="system-category__header">Disease Modeling &amp; Clinical AI</h3>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <p class="project-card__meta">Doctoral Research · IIT-BHU</p>
+                    <h3 class="project-card__title">Seizure Forecasting & Adaptive Diagnosis</h3>
+                    <p class="project-card__body">Probabilistic frameworks combining dynamic state transitions and patient-adaptive AI with EEG/ECG to predict seizure onset before manifestation.</p>
+                    <a href="https://github.com/soinikghosh9/Neuro-ADEPT" target="_blank" class="project-card__link">Repository →</a>
+                </article>
+                <article class="project-card">
+                    <p class="project-card__meta">Neuro-AI · IEEE EMBC</p>
+                    <h3 class="project-card__title">Neuro-ADEPT Framework</h3>
+                    <p class="project-card__body">Neuro-adaptive deep learning architecture for interpretable seizure risk stratification and broader neurological disorder modeling with neural signals.</p>
+                    <a href="https://github.com/soinikghosh9/Neuro-ADEPT" target="_blank" class="project-card__link">Repository →</a>
+                </article>
+                <article class="project-card">
+                    <p class="project-card__meta">Journal Publication · Under Review</p>
+                    <h3 class="project-card__title">NeuroChronoGraph</h3>
+                    <p class="project-card__body">A hierarchical Graph Neural Network for EEG-based differential diagnosis of Alzheimer’s Disease, Frontotemporal Dementia, and MCI.</p>
+                </article>
+                <article class="project-card">
+                    <p class="project-card__meta">Network Neuroscience</p>
+                    <h3 class="project-card__title">Interictal Network Dynamics</h3>
+                    <p class="project-card__body">Characterizing epileptiform discharges as dynamic network events using Multimodal Source-Connectivity and Graph Neural Networks on SEEG/EEG.</p>
+                    <a href="https://github.com/soinikghosh9/Interictal-Network-Dynamics" target="_blank" class="project-card__link">Repository →</a>
+                </article>
+            </div>
+        </div>
+
+        <div class="systems-cluster reveal">
+            <h3 class="system-category__header">Generative &amp; Brain-Inspired AI</h3>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <p class="project-card__meta">CBM Journal · IF 6.3</p>
+                    <h3 class="project-card__title">GenEEG Diffusion Model</h3>
+                    <p class="project-card__body">Patient-adaptive latent diffusion model for high-fidelity synthetic EEG generation, fundamentally bridging the data scarcity gap in clinical AI training.</p>
+                    <a href="https://github.com/soinikghosh9/GenEEG" target="_blank" class="project-card__link" style="margin-right:1rem;">Repository →</a>
+                    <a href="https://doi.org/10.1016/j.compbiomed.2025.111398" target="_blank" class="project-card__link">Read Paper →</a>
+                </article>
+            </div>
+        </div>
+
+        <div class="systems-cluster reveal">
+            <h3 class="system-category__header">Neurotechnology &amp; Rehabilitation</h3>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <p class="project-card__meta">PRAGATI 2023 Winner · VR/XR</p>
+                    <h3 class="project-card__title">VR Robotic Exo-suit Rehab</h3>
+                    <p class="project-card__body">Immersive VR stroke rehabilitation environment actively integrated with a robotic exoskeleton and real-time neuro-biofeedback systems.</p>
+                    <a href="https://github.com/soinikghosh9/Firefly" target="_blank" class="project-card__link">Repository →</a>
+                </article>
+                <article class="project-card">
+                    <p class="project-card__meta">BCI · Robotics · IIT-BHU</p>
+                    <h3 class="project-card__title">Motor Imagery Prosthetic Control</h3>
+                    <p class="project-card__body">Real-time prosthetic array control system translating motor imagery EEG signals into intuitive robotic commands via non-invasive BCI.</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="systems-cluster reveal">
+            <h3 class="system-category__header">Medical Devices &amp; Edge AI</h3>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <p class="project-card__meta">SIH 2024 · National Winner</p>
+                    <h3 class="project-card__title">AI Ultrasound Cardiovascular System</h3>
+                    <p class="project-card__body">Multi-sensor embedded hardware coupled with AI imaging solutions for accessible, non-invasive point-of-care cardiovascular diagnostics.</p>
+                    <a href="https://github.com/soinikghosh9/Hridayam" target="_blank" class="project-card__link">Repository →</a>
+                </article>
+                <article class="project-card">
+                    <p class="project-card__meta">Google · MedGemma Challenge</p>
+                    <h3 class="project-card__title">GemSAM Pipeline</h3>
+                    <p class="project-card__body">Agentic explainable multi-modal medical image processing deployed on constrained edge tiering. Interpretable clinical diagnostics anywhere.</p>
+                    <a href="https://github.com/soinikghosh9/GemSAM" target="_blank" class="project-card__link">GitHub →</a>
+                </article>
+                <article class="project-card">
+                    <p class="project-card__meta">Hardware Engineering</p>
+                    <h3 class="project-card__title">Hridae Embedded Systems</h3>
+                    <p class="project-card__body">Designing and fabricating low-noise PCBs and firmware pipelines for seamless neurophysiological biosignal acquisition under startup R&D.</p>
+                    <a href="https://github.com/soinikghosh9/Hridayam-MedTech" target="_blank" class="project-card__link">Repository →</a>
+                </article>
+                <article class="project-card">
+                    <p class="project-card__meta">MIT Media Lab Challenge</p>
+                    <h3 class="project-card__title">HippoSphere AI</h3>
+                    <p class="project-card__body">Sustainable lightweight deep learning systems pushed to resource-constrained edge devices for automated behavioral tracking.</p>
+                    <a href="https://github.com/soinikghosh9/hipposphere-ai" target="_blank" class="project-card__link">GitHub →</a>
+                </article>
+            </div>
+        </div>
+
+        <div class="systems-cluster reveal">
+            <h3 class="system-category__header">Platforms</h3>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <p class="project-card__meta">Stanford Longevity Challenge</p>
+                    <h3 class="project-card__title">CogniDhi AI Platform</h3>
+                    <p class="project-card__body">Cloud-native AI platform predicting early cognitive decline, providing personalized brain fitness regimens alongside an integrated professional support network.</p>
+                    <a href="https://cogni-dhi.vercel.app/" target="_blank" class="project-card__link">Visit Platform →</a>
+                </article>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         PUBLICATIONS
+    ══════════════════════════════════ -->
+    <section class="section" id="publications">
+      <div class="wrap">
+        <div class="sec-header">
+          <div>
+            <span class="label">Research Outputs</span>
+            <h2 class="heading-lg" style="margin-top:0.5rem;color:var(--c-dark);">Key Publications</h2>
+          </div>
+          <span class="sec-header__count">05</span>
+        </div>
+
+        <div class="publications-grid reveal">
+          <!-- Pub 1 -->
+          <article class="pub-card">
+            <div class="pub-card__num">01</div>
+            <span class="pub-tag pub-tag--journal">Journal · Elsevier</span>
+            <h3 class="pub-card__title">GenEEG: Improving epileptic EEG detection through latent diffusion</h3>
+            <p class="pub-card__meta"><strong>Computers in Biology and Medicine</strong>, 2025. Impact Factor: 6.3</p>
+            <a href="https://doi.org/10.1016/j.compbiomed.2025.111398" target="_blank" class="pub-card__link">View DOI: 111398 →</a>
+          </article>
+
+          <!-- Pub 2 -->
+          <article class="pub-card">
+            <div class="pub-card__num">02</div>
+            <span class="pub-tag pub-tag--review">Journal · In Peer-Review</span>
+            <h3 class="pub-card__title">Probabilistic Seizure Forecasting with Patient-Adaptive AI</h3>
+          </article>
+
+          <!-- Pub 3 -->
+          <article class="pub-card">
+            <div class="pub-card__num">03</div>
+            <span class="pub-tag pub-tag--review">Journal · In Peer-Review</span>
+            <h3 class="pub-card__title">NeuroChronoGraph: A Hierarchical Graph Neural Network for EEG-Based Differential Diagnosis of AD, FTD, and MCI</h3>
+            <p class="pub-card__meta">Differential Diagnosis of Alzheimer's Disease, Frontotemporal Dementia, and Mild Cognitive Impairment</p>
+          </article>
+
+          <!-- Pub 4 -->
+          <article class="pub-card">
+            <div class="pub-card__num">04</div>
+            <span class="pub-tag pub-tag--conference">Conference · Springer</span>
+            <h3 class="pub-card__title">Decoding Neural Dynamics of Motor Imagery &amp; Execution</h3>
+            <p class="pub-card__meta">Mind, Brain and Consciousness Conference 2025 · <strong>In Press, Springer</strong></p>
+          </article>
+
+          <!-- Pub 5 -->
+          <article class="pub-card">
+            <div class="pub-card__num">05</div>
+            <span class="pub-tag pub-tag--conference">Conference · IEEE</span>
+            <h3 class="pub-card__title">Hybrid Classical-Quantum Model for Brain Tumor Classification</h3>
+            <p class="pub-card__meta">IEEE 3rd Intel. Conf. on Comm, Security, and AI (ICCSAI) 2025</p>
+            <a href="https://doi.org/10.1109/ICCSAI64074.2025.11064720" target="_blank" class="pub-card__link">View DOI: 11064720 →</a>
+          </article>
+
+          <!-- Pub 6 -->
+          <article class="pub-card">
+            <div class="pub-card__num">06</div>
+            <span class="pub-tag pub-tag--conference">Conference · IEEE</span>
+            <h3 class="pub-card__title">Haptic Exo-Suit with Tactile Feedback in Hand Rehab</h3>
+            <p class="pub-card__meta">IEEE INSPECT 2024 · Real-time neuro-biofeedback integration</p>
+            <a href="https://ieeexplore.ieee.org/abstract/document/10896072" target="_blank" class="pub-card__link">View Paper →</a>
+          </article>
+
+          <!-- Pub 7 -->
+          <article class="pub-card">
+            <div class="pub-card__num">07</div>
+            <span class="pub-tag pub-tag--conference">Conference · IEEE</span>
+            <h3 class="pub-card__title">Real-Time Brain Signal Monitoring for BCI Applications</h3>
+            <p class="pub-card__meta">IEEE AKGEC - ICCCT 2024 · Low-noise acquisition pipelines</p>
+            <a href="https://ieeexplore.ieee.org/abstract/document/10868917" target="_blank" class="pub-card__link">View Paper →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         EXPERIENCE
+    ══════════════════════════════════ -->
+    <section class="section section--teal-lt" id="experience">
+      <div class="wrap">
+        <div class="sec-header">
+          <div>
+            <span class="label">Professional Journey</span>
+            <h2 class="heading-lg" style="margin-top:0.5rem;">Experience &amp; Startups</h2>
+          </div>
+          <span class="sec-header__count">06</span>
+        </div>
+
+        <div class="exp-grid reveal">
+          <div class="exp-card">
+            <span class="exp-card__date">2023 — Present</span>
+            <h3 class="exp-card__title">PhD Researcher &amp; Teaching Assistant</h3>
+            <p class="exp-card__loc">IIT (BHU) Varanasi</p>
+            <p class="exp-card__desc">Doctoral research in BCI, Neuroengineering, and Clinical AI. Responsibilities include experimental design, multimodal biosignal collection (EEG/ECG), algorithm development, and academic instruction.</p>
+          </div>
+          <div class="exp-card">
+            <span class="exp-card__date">2024 — Present</span>
+            <h3 class="exp-card__title">Co-Founder &amp; R&amp;D Lead</h3>
+            <p class="exp-card__loc"><strong>Hridae Medical Technologies Pvt. Ltd.</strong> (Start-up) &nbsp;&middot;&nbsp; <a href="https://hridae.com" target="_blank" style="color:var(--c-teal); font-weight:700;">hridae.com</a></p>
+            <p class="exp-card__desc">Architecting and fabricating low-noise embedded systems and AI imagery solutions for cardiovascular health monitoring and neurotechnological applications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         EDUCATION
+    ══════════════════════════════════ -->
+    <section class="section" id="education">
+      <div class="wrap">
+        <div class="sec-header">
+          <div>
+            <span class="label">Academic Background</span>
+            <h2 class="heading-lg" style="margin-top:0.5rem;color:var(--c-dark);">Education</h2>
+          </div>
+          <span class="sec-header__count">07</span>
+        </div>
+
+        <div class="edu-grid reveal">
+          <div class="edu-card">
+            <span class="label" style="margin-bottom:1rem;display:block;">2023 – Present</span>
+            <p class="edu-card__degree">PhD · Biomedical Engineering</p>
+            <p class="edu-card__school">Indian Institute of Technology (BHU) Varanasi</p>
+            <p class="edu-card__meta">CGPA: 9.6 / 10</p>
+            <p class="edu-card__note">Focus: Biomedical Signal & Image Processing, BCI, AI, Mathematical Modelling</p>
+          </div>
+          <div class="edu-card">
+            <span class="label" style="margin-bottom:1rem;display:block;">2019 – 2021</span>
+            <p class="edu-card__degree">M.Sc · Physiology (Neuroscience)</p>
+            <p class="edu-card__school">University of Calcutta</p>
+            <p class="edu-card__meta">First Class · CGPA: 7.4 / 10</p>
+            <p class="edu-card__note">Thesis: "Neuropsychophysiological Behaviour of Adenosine: Crosstalks between Neurotransmitters"</p>
+          </div>
+          <div class="edu-card">
+            <span class="label" style="margin-bottom:1rem;display:block;">2016 – 2019</span>
+            <p class="edu-card__degree">B.Sc · Human Physiology (Honours)</p>
+            <p class="edu-card__school">Surendranath College, University of Calcutta</p>
+            <p class="edu-card__meta">Kolkata, India</p>
+            <p class="edu-card__note">Foundation in physiological sciences and human biology</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         AWARDS & TRAINING
+    ══════════════════════════════════ -->
+    <section class="section section--dark" id="awards">
+      <div class="wrap">
+        <div class="sec-header sec-header--dark">
+          <div>
+            <span class="label">Honors &amp; Recognition</span>
+            <h2 class="heading-lg" style="margin-top:0.5rem;color:var(--c-white);">Awards &amp; Training</h2>
+          </div>
+          <span class="sec-header__count" style="color:#fff;">08</span>
+        </div>
+
+        <div class="honors-grid reveal">
+          <div class="honors-col">
+            <h3 class="system-category__header" style="font-size:1.4rem; color:var(--c-teal);">Major Awards</h3>
+            <div class="honors-list">
+              <div class="honor-item">
+                <div class="honor-item__badge"><i class="fas fa-trophy"></i></div>
+                <p class="honor-item__text"><strong>Winner</strong> — Smart India Hackathon 2024 (Hardware Edition), Govt. of India</p>
+              </div>
+              <div class="honor-item">
+                <div class="honor-item__badge"><i class="fas fa-medal"></i></div>
+                <p class="honor-item__text"><strong>2nd Runner Up</strong> — PRAGATI Hackathon 2023, TIH Dristi IHUB &amp; IIT Jodhpur</p>
+              </div>
+              <div class="honor-item">
+                <div class="honor-item__badge"><i class="fas fa-certificate"></i></div>
+                <p class="honor-item__text"><strong>GATE Qualified 2023</strong> — Life Sciences, All India Rank 1313</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="honors-col">
+            <h3 class="system-category__header" style="font-size:1.4rem; color:var(--c-teal);">Advanced Training</h3>
+            <div class="honors-list">
+               <div class="honor-item">
+                <div class="honor-item__badge"><i class="fas fa-graduation-cap"></i></div>
+                <p class="honor-item__text"><strong>g.tec BCI &amp; Neurotechnology Spring School 2025</strong> — Austria (BCI Training)</p>
+              </div>
+              <div class="honor-item">
+                <div class="honor-item__badge"><i class="fas fa-project-diagram"></i></div>
+                <p class="honor-item__text"><strong>Neurogati CNS Lab (IIT Madras)</strong> — Brain Modeling &amp; Brain-inspired AI</p>
+              </div>
+              <div class="honor-item">
+                <div class="honor-item__badge"><i class="fas fa-microchip"></i></div>
+                <p class="honor-item__text"><strong>SERB KARYASHALA (IIT Roorkee)</strong> — AI in Human Brain-Computer Interaction</p>
+              </div>
+              <div class="honor-item">
+                <div class="honor-item__badge"><i class="fas fa-vial"></i></div>
+                <p class="honor-item__text"><strong>CSIR-IICB Skill Program</strong> — Molecular Biology &amp; Characterization</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         RESEARCH PHILOSOPHY & BEYOND
+    ══════════════════════════════════ -->
+    <section class="section" id="beyond">
+      <div class="wrap">
+        <div class="sec-header">
+          <div>
+            <span class="label">Perspective</span>
+            <h2 class="heading-lg" style="margin-top:0.5rem;">Research Philosophy</h2>
+          </div>
+          <span class="sec-header__count">09</span>
+        </div>
+
+        <div class="reveal" style="max-width:900px; margin-bottom:5rem;">
+            <p class="body-lg" style="color:var(--c-dark); line-height:1.7; font-size:1.15rem;">
+            "I am interested in understanding the brain not only as a biological organ but as a computational system. Many neurological diseases can be viewed as disorders of dynamical systems and network behavior. By combining computational neuroscience, artificial intelligence, and physiological modeling, I aim to build models that can predict disease onset, progression, and treatment response. ultimately, I believe future healthcare systems will rely on continuous physiological monitoring, computational modeling, and intelligent decision systems — and my work is focused on building components of such medical intelligence systems."
+            </p>
+        </div>
+
+        <!-- Beyond Science -->
+        <div class="sec-header">
+          <div>
+            <span class="label">Arts &amp; Creative Work</span>
+            <h2 class="heading-lg" style="margin-top:0.5rem;">Beyond Science</h2>
+          </div>
+        </div>
+
+        <div class="arts-grid reveal">
+          <div class="art-card">
+            <div class="art-card__icon"><i class="fas fa-music"></i></div>
+            <h3 class="art-card__title">Music &amp; Soundscapes</h3>
+            <p class="art-card__desc">Multi-instrumentalist and music composer. Performing as <em>Psychedelics</em> — exploring the neural basis of creativity through original compositions and audio experimentation.</p>
+            <div class="art-links">
+              <a href="https://open.spotify.com/artist/3VprLdYpRRnk0ymHHozFOb/" target="_blank" class="art-link">
+                <i class="fab fa-spotify"></i> Psychedelics — Spotify
+              </a>
+              <a href="https://www.youtube.com/@OfficialPsychedelics" target="_blank" class="art-link">
+                <i class="fab fa-youtube"></i> Psychedelics — YouTube
+              </a>
+            </div>
+          </div>
+
+          <div class="art-card">
+            <div class="art-card__icon"><i class="fas fa-film"></i></div>
+            <h3 class="art-card__title">Cinema &amp; Screenwriting</h3>
+            <p class="art-card__desc">Independent filmmaker and screenwriter. Creating visual narratives that examine the human condition, consciousness, and the poetry of impermanence.</p>
+            <div class="art-links">
+              <a href="https://www.imdb.com/name/nm14161356/" target="_blank" class="art-link">
+                <i class="fab fa-imdb"></i> IMDb Filmography
+              </a>
+              <a href="https://www.youtube.com/watch?v=DJnyU5DOGh8" target="_blank" class="art-link">
+                <i class="fab fa-youtube"></i> Short Film I
+              </a>
+              <a href="https://www.instagram.com/soinikghosh9/" target="_blank" class="art-link">
+                <i class="fab fa-instagram"></i> Instagram Profile
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         CONTACT
+    ══════════════════════════════════ -->
+    <section class="section section--teal-lt" id="contact">
+      <div class="wrap">
+        <div class="sec-header">
+          <div>
+            <span class="label">Get in Touch</span>
+            <h2 class="heading-lg" style="margin-top:0.5rem;">Contact / Collaboration</h2>
+          </div>
+          <span class="sec-header__count">10</span>
+        </div>
+
+        <div class="contact-card reveal">
+          <h3 class="heading-md" style="margin-bottom:1.25rem;">Open to collaboration</h3>
+          <p class="contact-card__text">Based at IIT-BHU Varanasi & Kolkata, India. Actively seeking high-impact research collaborations in core algorithmic neuro-AI modeling, hardware prototyping of medical devices, and intelligent clinical setups.</p>
+              <a href="https://scholar.google.com/citations?user=l9U73kcAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p class="footer__text">© <span id="yr"></span> Soinik Ghosh. Computational Modeling of Brain and Diseases → Brain-Inspired AI → Intelligent Clinical Systems</p>
+      <div class="footer__links">
+        <a href="#vision">Research</a>
+        <a href="documents/Soinik_Ghosh_CV.pdf" target="_blank">CV</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/FloatingLines.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => io.observe(el));
+
+    // Floating Lines shader
+    document.addEventListener('DOMContentLoaded', () => {
+      try {
+        if (typeof THREE !== 'undefined' && typeof FloatingLines !== 'undefined') {
+          new FloatingLines('bg-canvas', {
+            linesGradient: ['#367D8A', '#285F6B', '#133336'],
+            lineCount: 6,
+            interactive: true,
+            parallax: true,
+            parallaxStrength: 0.08
+          });
+        }
+      } catch(e) { /* shader optional */ }
+    });
+  </script>
+
 </body>
 </html>
