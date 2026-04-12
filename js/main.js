@@ -26,18 +26,18 @@ document.querySelectorAll('#navbar a[href^="#"]').forEach(anchor => {
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible'); // Standardized on is-visible
+            entry.target.classList.add('is-visible'); 
             revealObserver.unobserve(entry.target); 
         }
     });
 }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -40px 0px'
+    threshold: 0.05,
+    rootMargin: '0px 0px 50px 0px' // Trigger slightly before it enters
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Dynamically attach reveal to major sections to ensure holistic scroll animations
-    const elements = document.querySelectorAll('section, .reveal');
+    // Only observe elements that explicitly use the reveal class
+    const elements = document.querySelectorAll('.reveal');
     elements.forEach(el => {
         revealObserver.observe(el);
     });
@@ -65,3 +65,43 @@ window.addEventListener('scroll', () => {
 });
 
 console.log("Apple Glossy Minimalism Redesign Active.");
+
+// ── Hamburger / Mobile Nav ────────────────────────────────────
+const hamburger = document.getElementById('nav-hamburger');
+const drawer    = document.getElementById('nav-drawer');
+const overlay   = document.getElementById('nav-overlay');
+
+function openDrawer() {
+  hamburger.classList.add('is-open');
+  hamburger.setAttribute('aria-expanded', 'true');
+  drawer.classList.add('is-open');
+  drawer.setAttribute('aria-hidden', 'false');
+  overlay.classList.add('is-open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeDrawer() {
+  hamburger.classList.remove('is-open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  drawer.classList.remove('is-open');
+  drawer.setAttribute('aria-hidden', 'true');
+  overlay.classList.remove('is-open');
+  document.body.style.overflow = '';
+}
+
+if (hamburger) {
+  hamburger.addEventListener('click', () => {
+    drawer.classList.contains('is-open') ? closeDrawer() : openDrawer();
+  });
+}
+
+if (overlay) {
+  overlay.addEventListener('click', closeDrawer);
+}
+
+// Close drawer when any link inside it is clicked
+if (drawer) {
+  drawer.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeDrawer);
+  });
+}
