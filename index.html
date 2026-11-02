@@ -3,850 +3,522 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soinik Ghosh · Clinical AI from biosignals</title>
   <meta name="description"
-    content="Soinik Ghosh — Computational Neuroengineering Researcher building Intelligent Medical Systems" />
-  <title>Soinik Ghosh | Research Identity</title>
+    content="Soinik Ghosh, PhD researcher in Biomedical Engineering at IIT (BHU) Varanasi and Co-Founder &amp; CTO of Hridae Medical Technologies. Interpretable clinical AI from brain and heart signals and medical images, automated imaging pipelines, and a local AI agent for research and clinical workflows." />
+  <meta name="author" content="Soinik Ghosh" />
+  <meta name="theme-color" content="#0B2429" />
+  <link rel="canonical" href="https://soinikghosh9.github.io/personal-website/" />
 
-  <!-- Fonts -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Soinik Ghosh · Clinical AI from biosignals" />
+  <meta property="og:description"
+    content="Interpretable clinical AI from brain and heart signals and medical images. Imaging pipelines, a local AI agent, and wearable monitoring at Hridae." />
+  <meta property="og:url" content="https://soinikghosh9.github.io/personal-website/" />
+  <meta property="og:image" content="https://soinikghosh9.github.io/personal-website/images/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-
-  <!-- Styles -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500&family=Sora:wght@500&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" />
+  <link rel="preload" as="image" href="images/portrait-640.webp"
+    imagesrcset="images/portrait-640.webp 640w, images/portrait-1100.webp 1100w"
+    imagesizes="(max-width: 900px) 70vw, 30vw" fetchpriority="high" />
   <link rel="stylesheet" href="css/style.css" />
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="js/main.js" defer></script>
 
-  <link rel="icon" href="images/favicon2.png" type="image/png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Soinik Ghosh",
+    "jobTitle": "PhD Researcher, Biomedical Engineering",
+    "affiliation": [
+      {"@type": "CollegeOrUniversity", "name": "Indian Institute of Technology (BHU) Varanasi"},
+      {"@type": "Organization", "name": "Hridae Medical Technologies", "url": "https://hridae.com"}
+    ],
+    "alumniOf": "University of Calcutta",
+    "email": "mailto:soinikghosh.rs.bme23@itbhu.ac.in",
+    "url": "https://soinikghosh9.github.io/personal-website/",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=l9U73kcAAAAJ",
+      "https://orcid.org/0009-0000-8277-8710",
+      "https://github.com/soinikghosh9",
+      "https://www.linkedin.com/in/soinik-ghosh-103411270"
+    ],
+    "knowsAbout": ["EEG", "Clinical AI", "Dementia screening", "Epilepsy", "Brain-computer interfaces", "ECG", "Medical devices"]
+  }
+  </script>
 </head>
 
 <body>
-  <div id="bg-canvas" aria-hidden="true"></div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M2 6.6V6a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v.6l-10 6.1z"/><path d="M2 8.9l10 6.1 10-6.1V18a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="2.6" y="8.6" width="4.2" height="12.4" rx=".4"/><circle cx="4.7" cy="4.4" r="2.4"/><path d="M9.6 8.6h4v1.8c.6-1.1 2-2.1 4.1-2.1 3.7 0 4.4 2.4 4.4 5.6V21h-4.2v-6.2c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3V21H9.6z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></symbol>
+    <symbol id="i-orcid" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 1a11 11 0 1 0 0 22 11 11 0 0 0 0-22zM7.2 9.7h1.6v7H7.2zM8 6.7a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm2.5 3h2.9c2.3 0 3.7 1.5 3.7 3.5s-1.4 3.5-3.7 3.5h-2.9zm1.5 1.3v4.4h1.3c1.4 0 2.2-.9 2.2-2.2S14.7 11 13.3 11z"/></symbol>
+    <symbol id="i-scholar" viewBox="0 0 24 24"><path d="M12 3 1 8.6l11 5.6 9-4.6V16h2V8.6z"/><path d="M5.4 12.4v3.5c0 1.9 3 3.8 6.6 3.8s6.6-1.9 6.6-3.8v-3.5L12 15.8z"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 2h8l5 5v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm7 1.5V8h4.5z"/></symbol>
+  </svg>
 
-  <!-- ══════════════════════════════════
-       NAV
-  ══════════════════════════════════ -->
-  <nav class="nav" id="navbar">
+  <a class="skip" href="#main">Skip to content</a>
+  <canvas class="bg-lines" aria-hidden="true"></canvas>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="nav" id="nav">
     <div class="wrap nav__inner">
-      <a href="#top" class="nav__logo" style="opacity:0;pointer-events:none;">S.G.</a>
-      <ul class="nav__links" id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#vision">Vision</a></li>
-        <li><a href="#areas">Areas</a></li>
-        <li><a href="#systems">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#beyond">Beyond</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <a href="#top" class="nav__mark" aria-label="Soinik Ghosh, back to top">Soinik Ghosh</a>
+      <nav aria-label="Sections">
+        <ul class="nav__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#background">Background</a></li>
+          <li><a href="#art">Art</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <span class="nav__indicator" aria-hidden="true"></span>
+      </nav>
+      <a class="btn btn--small nav__cv" href="documents/Soinik_Ghosh_CV.pdf" target="_blank" rel="noopener">CV</a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span>
       </button>
     </div>
-  </nav>
-  <div class="nav__drawer" id="nav-drawer" aria-hidden="true">
-    <ul class="nav__drawer-links">
+  </header>
+  <div class="drawer" id="drawer" hidden>
+    <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#vision">Vision</a></li>
-      <li><a href="#areas">Areas</a></li>
-      <li><a href="#systems">Research</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#work">Work</a></li>
       <li><a href="#publications">Publications</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#beyond">Beyond</a></li>
+      <li><a href="#background">Background</a></li>
+      <li><a href="#art">Art</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="documents/Soinik_Ghosh_CV.pdf" target="_blank" rel="noopener">Download CV</a></li>
     </ul>
   </div>
-  <div class="nav__overlay" id="nav-overlay"></div>
 
-  <!-- ══════════════════════════════════
-       HERO
-  ══════════════════════════════════ -->
-  <header class="hero" id="top">
-    <div class="hero__social">
-      <a href="mailto:soinikghosh.rs.bme23@itbhu.ac.in" title="IIT-BHU Mail"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/soinik-ghosh-103411270" target="_blank" title="LinkedIn"><i
-          class="fab fa-linkedin-in"></i></a>
-      <a href="https://github.com/soinikghosh9" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://orcid.org/0009-0000-8277-8710" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
-      <a href="https://scholar.google.com/citations?user=l9U73kcAAAAJ&hl=en" target="_blank" title="Google Scholar"><i
-          class="fas fa-graduation-cap"></i></a>
-    </div>
+  <main id="main">
 
-    <div class="wrap">
-      <div class="hero__grid reveal">
-        <div class="hero__img-wrap">
-          <img src="images/pic1.jpeg" alt="Soinik Ghosh" />
-        </div>
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="wrap hero__grid">
         <div class="hero__text">
-          <div class="hero__eyebrow-pills">
-            <div class="hero__pill-row">
-              <span class="pill">PhD Researcher</span>
-              <span class="pill">Entrepreneur</span>
-            </div>
-            <div class="hero__pill-row">
-              <span class="pill">IIT-BHU Varanasi</span>
-              <span class="pill">Biomedical Engineering</span>
-            </div>
-          </div>
-          <h1 class="heading-xl hero__name">Soinik Ghosh</h1>
-          <div class="hero__glass-block">
-            <p class="hero__tagline">Computational Neuroscience &nbsp;&nbsp;&middot;&nbsp;&nbsp; Clinical AI
-              &nbsp;&nbsp;&middot;&nbsp;&nbsp; Intelligent Medical Systems</p>
-            <p class="body-lg hero__bio">I work on computational modeling of neurological diseases and physiological
-              systems, brain-inspired AI architectures, and intelligent medical systems for diagnosis, prediction, and
-              rehabilitation. My research focuses on epilepsy, Alzheimer’s disease, dementia, and cognitive decline
-              using EEG and multimodal physiological signals.</p>
-          </div>
-          <div class="hero__actions">
-            <a href="documents/Soinik_Ghosh_CV.pdf" target="_blank" class="btn btn-primary">Download CV</a>
-            <a href="#vision" class="btn btn-secondary">Research Vision</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main class="main-content">
-
-    <!-- ══════════════════════════════════
-         ABOUT / MISSION
-    ══════════════════════════════════ -->
-    <section class="section" id="about">
-      <div class="wrap">
-        <div class="sec-header">
-          <div>
-            <span class="label">Mission</span>
-            <h2 class="heading-lg" style="margin-top:0.5rem;color:var(--c-dark);">Decoding Neural Complexity</h2>
-          </div>
-          <span class="sec-header__count">01</span>
-        </div>
-
-        <div class="about__grid reveal">
-          <div class="about__sidebar">
-            <p class="about__lead">"My research aims to develop computational models of the human brain and
-              physiological systems and translate these models into intelligent clinical systems."</p>
-          </div>
-          <div class="about__body">
-            <p class="body-lg" style="color:var(--c-dark);">These systems are designed to be capable of diagnosing
-              diseases, predicting disease progression, assisting rehabilitation, and enabling seamless human-machine
-              interaction.</p>
-            <p class="body-md" style="margin-top:1.5rem;">I am particularly interested in neurological disorders such as
-              epilepsy, Alzheimer’s disease, dementia, and cognitive decline. Through the integration of biosignals, AI
-              algorithms, and clinical decision systems, I aim to design overarching medical intelligence platforms and
-              brain-inspired artificial intelligence architectures that profoundly augment clinical care.</p>
-
-            <div style="margin-top:2.5rem; padding-left:1.5rem; border-left:4px solid var(--c-teal);">
-              <p class="body-md" style="font-weight:600; font-style:italic;">My work focuses on computational modeling
-                of the brain, neurological diseases, and physiological systems, and translating these models into
-                brain-inspired AI algorithms and intelligent medical systems for diagnosis, prediction, and
-                rehabilitation.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════
-         SKILLS & EXPERTISE
-    ══════════════════════════════════ -->
-    <section class="section" id="skills">
-      <div class="wrap">
-        <div class="sec-header">
-          <div>
-            <span class="label">Skills &amp; Expertise</span>
-            <h2 class="heading-lg" style="margin-top:0.5rem;color:var(--c-dark);">Technical &amp; Strategic Proficiency
-            </h2>
-          </div>
-          <span class="sec-header__count">02</span>
-        </div>
-
-        <div class="skills-grid reveal">
-          <!-- AI & ML -->
-          <div class="skill-box">
-            <div class="skill-box__head">
-              <div class="skill-box__icon"><i class="fas fa-brain"></i></div>
-              <h3 class="skill-box__title">Computational AI</h3>
-            </div>
-            <div class="skill-pills">
-              <span class="skill-pill">PyTorch</span>
-              <span class="skill-pill">Deep Learning</span>
-              <span class="skill-pill">Latent Diffusion</span>
-              <span class="skill-pill">BCI Systems</span>
-              <span class="skill-pill">Signal & Image Processing </span>
-            </div>
-          </div>
-
-          <!-- Systems & Engineering -->
-          <div class="skill-box">
-            <div class="skill-box__head">
-              <div class="skill-box__icon"><i class="fas fa-microchip"></i></div>
-              <h3 class="skill-box__title">Neuro-Systems</h3>
-            </div>
-            <div class="skill-pills">
-              <span class="skill-pill">System Design</span>
-              <span class="skill-pill">Embedded Systems</span>
-              <span class="skill-pill">PCB Design (Low Noise)</span>
-              <span class="skill-pill">Edge AI Deployment</span>
-              <span class="skill-pill">Bio-Sensors &amp; Wearables</span>
-            </div>
-          </div>
-
-          <!-- Dev Stack -->
-          <div class="skill-box">
-            <div class="skill-box__head">
-              <div class="skill-box__icon"><i class="fas fa-code"></i></div>
-              <h3 class="skill-box__title">Software Stack</h3>
-            </div>
-            <div class="skill-pills">
-              <span class="skill-pill">Python</span>
-              <span class="skill-pill">MATLAB</span>
-              <span class="skill-pill">C / C++</span>
-              <span class="skill-pill">GCP &amp; Cloud Ops</span>
-              <span class="skill-pill">UI/UX Design</span>
-            </div>
-          </div>
-
-          <!-- Research Strategy -->
-          <div class="skill-box">
-            <div class="skill-box__head">
-              <div class="skill-box__icon"><i class="fas fa-chess-knight"></i></div>
-              <h3 class="skill-box__title">Research Strategy</h3>
-            </div>
-            <div class="skill-pills">
-              <span class="skill-pill">Critical Thinking</span>
-              <span class="skill-pill">Experimental Design</span>
-              <span class="skill-pill">Mathematical Modeling</span>
-              <span class="skill-pill">Clinical Protocol Design</span>
-            </div>
-          </div>
-
-          <!-- Entrepreneurship -->
-          <div class="skill-box">
-            <div class="skill-box__head">
-              <div class="skill-box__icon"><i class="fas fa-rocket"></i></div>
-              <h3 class="skill-box__title">Entrepreneurship</h3>
-            </div>
-            <div class="skill-pills">
-              <span class="skill-pill">Start-up Leadership</span>
-              <span class="skill-pill">Product R&amp;D</span>
-              <span class="skill-pill">Strategic Planning</span>
-              <span class="skill-pill">Marketing &amp; Sales</span>
-              <span class="skill-pill">Clinical Translation</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════
-         RESEARCH VISION
-    ══════════════════════════════════ -->
-    <section class="section section--teal-lt" id="vision">
-      <div class="wrap">
-        <div class="sec-header">
-          <div>
-            <span class="label">Objectives</span>
-            <h2 class="heading-lg" style="margin-top:0.5rem;">Core Research Vision</h2>
-          </div>
-          <span class="sec-header__count">03</span>
-        </div>
-
-        <div class="vision-grid reveal">
-          <div class="vision-card">
-            <div class="vision-card__icon"><i class="fas fa-brain"></i></div>
-            <h3 class="vision-card__title">Brain Dynamics Modeling</h3>
-            <p class="vision-card__text">Developing mathematical frameworks to characterize seizures and
-              neurodegeneration as shifts in high-dimensional nonlinear state-spaces.</p>
-          </div>
-          <div class="vision-card">
-            <div class="vision-card__icon"><i class="fas fa-microchip"></i></div>
-            <h3 class="vision-card__title">Cognitive Neuro-Adaptive AI</h3>
-            <p class="vision-card__text">Building patient-specific AI agents that learn from continuous biosignal
-              streams to predict neurological events before they manifest.</p>
-          </div>
-          <div class="vision-card">
-            <div class="vision-card__icon"><i class="fas fa-stethoscope"></i></div>
-            <h3 class="vision-card__title">Medical Intelligence Platforms</h3>
-            <p class="vision-card__text">Synthesizing edge-AI hardware with cloud-native medical intelligence to create
-              truly intelligent, point-of-care clinical diagnostics.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════
-         RESEARCH AREAS
-    ══════════════════════════════════ -->
-    <section class="section" id="areas">
-      <div class="wrap">
-        <div class="sec-header">
-          <div>
-            <span class="label">Domains of Expertise</span>
-            <h2 class="heading-lg" style="margin-top:0.5rem;">Research Areas</h2>
-          </div>
-          <span class="sec-header__count">04</span>
-        </div>
-
-        <div class="areas-grid reveal">
-          <!-- Pillar 1 -->
-          <div class="area-card">
-            <h3 class="area-card__title">Computational Modeling of Neurological Disorders</h3>
-            <ul class="area-list">
-              <li>Epilepsy</li>
-              <li>Alzheimer’s</li>
-              <li>Dementia</li>
-              <li>Cognitive decline</li>
-              <li>Brain network modeling</li>
-            </ul>
-          </div>
-
-          <!-- Pillar 2 -->
-          <div class="area-card">
-            <h3 class="area-card__title">Computational Modeling of Physiological Systems</h3>
-            <ul class="area-list">
-              <li>Brain dynamics</li>
-              <li>Cardiovascular signals</li>
-              <li>Multimodal biosignals</li>
-              <li>Dynamical systems modeling</li>
-              <li>Digital twins</li>
-            </ul>
-          </div>
-
-          <!-- Pillar 3 -->
-          <div class="area-card">
-            <h3 class="area-card__title">Cognitive Diagnosis &amp; Rehabilitation</h3>
-            <ul class="area-list">
-              <li>Cognitive assessment systems</li>
-              <li>Cognitive rehabilitation platforms</li>
-              <li>BCI rehabilitation</li>
-              <li>VR rehabilitation</li>
-              <li>Assistive communication systems</li>
-            </ul>
-          </div>
-
-          <!-- Pillar 4 -->
-          <div class="area-card">
-            <h3 class="area-card__title">Brain-Inspired AI &amp; Medical Intelligence Systems</h3>
-            <ul class="area-list">
-              <li>Brain-inspired AI architectures</li>
-              <li>Generative models for biosignals</li>
-              <li>Clinical decision support algorithms</li>
-              <li>Edge AI medical devices</li>
-              <li>Medical intelligence platforms</li>
+          <p class="hero__kicker" data-load="1"><span>PhD Researcher, IIT (BHU) Varanasi</span>
+            <span class="sep" aria-hidden="true">/</span>
+            <span>Co-Founder &amp; CTO at <a class="hridae-link" href="https://hridae.com/" target="_blank" rel="noopener"><img src="images/hridae-mark.png" width="18" height="17" alt="" />Hridae</a></span></p>
+          <h1 class="hero__name">
+            <span class="sr-only">Soinik Ghosh</span>
+            <span class="line" aria-hidden="true"><span class="w"><span style="--wi:0">Soinik</span></span></span>
+            <span class="line line--2" aria-hidden="true"><span class="w"><span style="--wi:1">Ghosh</span></span></span>
+          </h1>
+          <p class="hero__lede" data-load="3">I develop interpretable and reliable clinical tools from brain and heart
+            signals and medical images, for screening, triage and clinical decision-making.</p>
+          <div class="hero__actions" data-load="4">
+            <a class="btn" href="documents/Soinik_Ghosh_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+            <a class="btn btn--ghost" href="#neurips">Featured paper
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v9M4.5 8.5 8 12l3.5-3.5" /></svg></a>
+            <ul class="socials">
+              <li><a href="mailto:soinikghosh.rs.bme23@itbhu.ac.in" aria-label="Email" title="Email"><svg><use href="#i-mail" /></svg></a></li>
+              <li><a href="https://www.linkedin.com/in/soinik-ghosh-103411270" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg><use href="#i-linkedin" /></svg></a></li>
+              <li><a href="https://github.com/soinikghosh9" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg><use href="#i-github" /></svg></a></li>
+              <li><a href="https://orcid.org/0009-0000-8277-8710" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID"><svg><use href="#i-orcid" /></svg></a></li>
+              <li><a href="https://scholar.google.com/citations?user=l9U73kcAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar"><svg><use href="#i-scholar" /></svg></a></li>
             </ul>
           </div>
         </div>
+        <div class="hero__visual" data-load="2">
+          <span class="orbit orbit--outer" aria-hidden="true"></span>
+          <span class="orbit orbit--inner" aria-hidden="true"><i></i></span>
+          <figure class="hero__portrait">
+            <img src="images/portrait-640.webp" srcset="images/portrait-640.webp 640w, images/portrait-1100.webp 1100w"
+              sizes="(max-width: 900px) 70vw, 30vw" width="640" height="800" alt="Soinik Ghosh, looking up at the sky"
+              fetchpriority="high" decoding="async" />
+          </figure>
+        </div>
+      </div>
+      <div class="wrap hero__foot" data-load="5">
+        <a class="hero__now" href="#neurips"><span class="dot" aria-hidden="true"></span><b>Now</b>
+          Presenting at GlobalSouthAI @ NeurIPS 2026, Sydney</a>
+        <span class="hero__place">Varanasi &amp; Kolkata, India</span>
+        <a class="hero__cue" href="#about">Scroll <span aria-hidden="true"></span></a>
       </div>
     </section>
 
-
-
-    <!-- ══════════════════════════════════
-         SELECTED RESEARCH & SYSTEMS
-    ══════════════════════════════════ -->
-    <section class="section section--dark" id="systems">
-      <div class="wrap">
-        <div class="sec-header sec-header--dark">
-          <div>
-            <span class="label">Systems Development</span>
-            <h2 class="heading-lg" style="margin-top:0.5rem;color:var(--c-white);">Selected Research &amp; Systems</h2>
+    <!-- 01 About -->
+    <section class="chapter" id="about">
+      <div class="wrap chapter__grid">
+        <p class="chapter__label" data-reveal><span class="mono">01</span>About</p>
+        <div class="chapter__body">
+          <h2 class="statement" data-split>Turning brain signals into clinical decisions that clinicians can understand and trust</h2>
+          <div class="about__cols" data-stagger>
+            <p data-reveal>My PhD develops EEG-based screening and triage tools and intelligent systems that support
+              clinical decisions in neurology, with a focus on dementia and epilepsy. I aim for tools that are
+              interpretable, so a clinician can see which features of the signal led to a result, and reliable, so
+              they keep working on patients from hospitals that were not used to build them.</p>
+            <p data-reveal>Beyond EEG, I build automated processing pipelines for different medical imaging
+              modalities, and a personal AI agent that runs locally on a laptop GPU, which I am training to carry out
+              coding, research and clinical workflow tasks. At Hridae Medical Technologies, which I co-founded, we
+              develop wearable monitoring for precision cardiology and neurology. I studied physiology and neuroscience
+              before engineering, and I work closely with neurologists at the Institute of Medical Sciences, BHU.</p>
           </div>
-          <span class="sec-header__count" style="color:#fff;">05</span>
-        </div>
-
-        <!-- System clusters -->
-        <div class="systems-cluster reveal">
-          <h3 class="system-category__header">Disease Modeling &amp; Clinical AI</h3>
-          <div class="projects-grid">
-            <article class="project-card">
-              <p class="project-card__meta">Doctoral Research · IIT-BHU</p>
-              <h3 class="project-card__title">Seizure Forecasting & Adaptive Diagnosis</h3>
-              <p class="project-card__body">Probabilistic frameworks combining dynamic state transitions and
-                patient-adaptive AI with EEG/ECG to predict seizure onset before manifestation.</p>
-              <a href="https://github.com/soinikghosh9/Neuro-ADEPT" target="_blank"
-                class="project-card__link">Repository →</a>
-            </article>
-            <article class="project-card">
-              <p class="project-card__meta">Neuro-AI · IEEE EMBC</p>
-              <h3 class="project-card__title">Neuro-ADEPT Framework</h3>
-              <p class="project-card__body">Neuro-adaptive deep learning architecture for interpretable seizure risk
-                stratification and broader neurological disorder modeling with neural signals.</p>
-              <a href="https://github.com/soinikghosh9/Neuro-ADEPT" target="_blank"
-                class="project-card__link">Repository →</a>
-            </article>
-            <article class="project-card">
-              <p class="project-card__meta">Journal Publication · Under Review</p>
-              <h3 class="project-card__title">NeuroChronoGraph</h3>
-              <p class="project-card__body">A hierarchical Graph Neural Network for EEG-based differential diagnosis of
-                Alzheimer’s Disease, Frontotemporal Dementia, and MCI.</p>
-            </article>
-            <article class="project-card">
-              <p class="project-card__meta">Network Neuroscience</p>
-              <h3 class="project-card__title">Interictal Network Dynamics</h3>
-              <p class="project-card__body">Characterizing epileptiform discharges as dynamic network events using
-                Multimodal Source-Connectivity and Graph Neural Networks on SEEG/EEG.</p>
-              <a href="https://github.com/soinikghosh9/Interictal-Network-Dynamics" target="_blank"
-                class="project-card__link">Repository →</a>
-            </article>
-          </div>
-        </div>
-
-        <div class="systems-cluster reveal">
-          <h3 class="system-category__header">Generative &amp; Brain-Inspired AI</h3>
-          <div class="projects-grid">
-            <article class="project-card">
-              <p class="project-card__meta">CBM Journal · IF 6.3</p>
-              <h3 class="project-card__title">GenEEG Diffusion Model</h3>
-              <p class="project-card__body">Patient-adaptive latent diffusion model for high-fidelity synthetic EEG
-                generation, fundamentally bridging the data scarcity gap in clinical AI training.</p>
-              <a href="https://github.com/soinikghosh9/GenEEG" target="_blank" class="project-card__link"
-                style="margin-right:1rem;">Repository →</a>
-              <a href="https://doi.org/10.1016/j.compbiomed.2025.111398" target="_blank" class="project-card__link">Read
-                Paper →</a>
-            </article>
-          </div>
-        </div>
-
-        <div class="systems-cluster reveal">
-          <h3 class="system-category__header">Neurotechnology &amp; Rehabilitation</h3>
-          <div class="projects-grid">
-            <article class="project-card">
-              <p class="project-card__meta">PRAGATI 2023 Winner · VR/XR</p>
-              <h3 class="project-card__title">VR Robotic Exo-suit Rehab</h3>
-              <p class="project-card__body">Immersive VR stroke rehabilitation environment actively integrated with a
-                robotic exoskeleton and real-time neuro-biofeedback systems.</p>
-              <a href="https://github.com/soinikghosh9/Firefly" target="_blank" class="project-card__link">Repository
-                →</a>
-            </article>
-            <article class="project-card">
-              <p class="project-card__meta">BCI · Robotics · IIT-BHU</p>
-              <h3 class="project-card__title">Motor Imagery Prosthetic Control</h3>
-              <p class="project-card__body">Real-time prosthetic array control system translating motor imagery EEG
-                signals into intuitive robotic commands via non-invasive BCI.</p>
-            </article>
-          </div>
-        </div>
-
-        <div class="systems-cluster reveal">
-          <h3 class="system-category__header">Medical Devices &amp; Edge AI</h3>
-          <div class="projects-grid">
-            <article class="project-card">
-              <p class="project-card__meta">SIH 2024 · National Winner</p>
-              <h3 class="project-card__title">AI Ultrasound Cardiovascular System</h3>
-              <p class="project-card__body">Multi-sensor embedded hardware coupled with AI imaging solutions for
-                accessible, non-invasive point-of-care cardiovascular diagnostics.</p>
-              <a href="https://github.com/soinikghosh9/Hridayam" target="_blank" class="project-card__link">Repository
-                →</a>
-            </article>
-            <article class="project-card">
-              <p class="project-card__meta">Google · MedGemma Challenge</p>
-              <h3 class="project-card__title">GemSAM Pipeline</h3>
-              <p class="project-card__body">Agentic explainable multi-modal medical image processing deployed on
-                constrained edge tiering. Interpretable clinical diagnostics anywhere.</p>
-              <a href="https://github.com/soinikghosh9/GemSAM" target="_blank" class="project-card__link">GitHub →</a>
-            </article>
-            <article class="project-card">
-              <p class="project-card__meta">Hardware Engineering</p>
-              <h3 class="project-card__title">Hridae Embedded Systems</h3>
-              <p class="project-card__body">Designing and fabricating low-noise PCBs and firmware pipelines for seamless
-                neurophysiological biosignal acquisition under startup R&D.</p>
-              <a href="https://github.com/soinikghosh9/Hridayam-MedTech" target="_blank"
-                class="project-card__link">Repository →</a>
-            </article>
-            <article class="project-card">
-              <p class="project-card__meta">MIT Media Lab Challenge</p>
-              <h3 class="project-card__title">HippoSphere AI</h3>
-              <p class="project-card__body">Sustainable lightweight deep learning systems pushed to resource-constrained
-                edge devices for automated behavioral tracking.</p>
-              <a href="https://github.com/soinikghosh9/hipposphere-ai" target="_blank" class="project-card__link">GitHub
-                →</a>
-            </article>
-          </div>
-        </div>
-
-        <div class="systems-cluster reveal">
-          <h3 class="system-category__header">Platforms</h3>
-          <div class="projects-grid">
-            <article class="project-card">
-              <p class="project-card__meta">Stanford Longevity Challenge</p>
-              <h3 class="project-card__title">CogniDhi AI Platform</h3>
-              <p class="project-card__body">Cloud-native AI platform predicting early cognitive decline, providing
-                personalized brain fitness regimens alongside an integrated professional support network.</p>
-              <a href="https://cogni-dhi.vercel.app/" target="_blank" class="project-card__link">Visit Platform →</a>
-            </article>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════
-         PUBLICATIONS
-    ══════════════════════════════════ -->
-    <section class="section" id="publications">
-      <div class="wrap">
-        <div class="sec-header">
-          <div>
-            <span class="label">Research Outputs</span>
-            <h2 class="heading-lg" style="margin-top:0.5rem;color:var(--c-dark);">Key Publications</h2>
-          </div>
-          <span class="sec-header__count">06</span>
-        </div>
-
-        <div class="publications-grid reveal">
-          <!-- Pub 1 -->
-          <article class="pub-card">
-            <div class="pub-card__num">01</div>
-            <span class="pub-tag pub-tag--journal">Journal · Elsevier</span>
-            <h3 class="pub-card__title">GenEEG: Improving epileptic EEG detection through latent diffusion</h3>
-            <p class="pub-card__meta"><strong>Computers in Biology and Medicine</strong>, 2025. Impact Factor: 6.3</p>
-            <a href="https://doi.org/10.1016/j.compbiomed.2025.111398" target="_blank" class="pub-card__link">View DOI:
-              111398 →</a>
-          </article>
-
-          <!-- Pub 2 -->
-          <article class="pub-card">
-            <div class="pub-card__num">02</div>
-            <span class="pub-tag pub-tag--review">Journal · In Peer-Review</span>
-            <h3 class="pub-card__title">Probabilistic Seizure Forecasting with Patient-Adaptive AI</h3>
-          </article>
-
-          <!-- Pub 3 -->
-          <article class="pub-card">
-            <div class="pub-card__num">03</div>
-            <span class="pub-tag pub-tag--review">Journal · In Peer-Review</span>
-            <h3 class="pub-card__title">NeuroChronoGraph: A Hierarchical Graph Neural Network for EEG-Based Differential
-              Diagnosis of AD, FTD, and MCI</h3>
-            <p class="pub-card__meta">Differential Diagnosis of Alzheimer's Disease, Frontotemporal Dementia, and Mild
-              Cognitive Impairment</p>
-          </article>
-
-          <!-- Pub 4 -->
-          <article class="pub-card">
-            <div class="pub-card__num">04</div>
-            <span class="pub-tag pub-tag--conference">Conference · Springer</span>
-            <h3 class="pub-card__title">Decoding Neural Dynamics of Motor Imagery &amp; Execution</h3>
-            <p class="pub-card__meta">Mind, Brain and Consciousness Conference 2025 · <strong>In Press,
-                Springer</strong></p>
-          </article>
-
-          <!-- Pub 5 -->
-          <article class="pub-card">
-            <div class="pub-card__num">05</div>
-            <span class="pub-tag pub-tag--conference">Conference · IEEE</span>
-            <h3 class="pub-card__title">Hybrid Classical-Quantum Model for Brain Tumor Classification</h3>
-            <p class="pub-card__meta">IEEE 3rd Intel. Conf. on Comm, Security, and AI (ICCSAI) 2025</p>
-            <a href="https://doi.org/10.1109/ICCSAI64074.2025.11064720" target="_blank" class="pub-card__link">View DOI:
-              11064720 →</a>
-          </article>
-
-          <!-- Pub 6 -->
-          <article class="pub-card">
-            <div class="pub-card__num">06</div>
-            <span class="pub-tag pub-tag--conference">Conference · IEEE</span>
-            <h3 class="pub-card__title">Haptic Exo-Suit with Tactile Feedback in Hand Rehab</h3>
-            <p class="pub-card__meta">IEEE INSPECT 2024 · Real-time neuro-biofeedback integration</p>
-            <a href="https://ieeexplore.ieee.org/abstract/document/10896072" target="_blank" class="pub-card__link">View
-              Paper →</a>
-          </article>
-
-          <!-- Pub 7 -->
-          <article class="pub-card">
-            <div class="pub-card__num">07</div>
-            <span class="pub-tag pub-tag--conference">Conference · IEEE</span>
-            <h3 class="pub-card__title">Real-Time Brain Signal Monitoring for BCI Applications</h3>
-            <p class="pub-card__meta">IEEE AKGEC - ICCCT 2024 · Low-noise acquisition pipelines</p>
-            <a href="https://ieeexplore.ieee.org/abstract/document/10868917" target="_blank" class="pub-card__link">View
-              Paper →</a>
-          </article>
+          <dl class="skills" data-stagger>
+            <div data-reveal><dt>Signals and images</dt><dd>EEG, ECG, heart sounds and multiple medical imaging modalities</dd></div>
+            <div data-reveal><dt>Machine learning</dt><dd>Deep learning, generative models, interpretable models and AI agents</dd></div>
+            <div data-reveal><dt>Validation</dt><dd>Testing on independent patient groups with sound statistics</dd></div>
+            <div data-reveal><dt>Engineering</dt><dd>Python and PyTorch, on-device AI, embedded systems and wearable hardware</dd></div>
+          </dl>
+          <details class="bio" data-reveal>
+            <summary>Speaker bio <span aria-hidden="true">+</span></summary>
+            <p id="speaker-bio">Soinik Ghosh is a PhD researcher at the School of Biomedical Engineering, IIT (BHU)
+              Varanasi, and Co-Founder and CTO of Hridae Medical Technologies. The PhD focuses on EEG-based screening
+              and triage tools and clinical decision-support systems that are interpretable and reliable. Soinik also builds automated processing pipelines
+              for medical images and a local AI agent, running on a laptop GPU, for research and clinical workflows. Hridae
+              develops wearable monitoring for precision cardiology and neurology. Work on reduced-electrode EEG for
+              cognitive screening, carried out with neurologists at the Institute of Medical Sciences, BHU, was accepted
+              at the GlobalSouthAI workshop at NeurIPS 2026. Soinik studied physiology and neuroscience at the
+              University of Calcutta before moving into engineering.</p>
+            <button class="btn btn--small btn--ghost" type="button" data-copy="#speaker-bio">Copy bio</button>
+          </details>
         </div>
       </div>
     </section>
 
-    <!-- ══════════════════════════════════
-         EXPERIENCE
-    ══════════════════════════════════ -->
-    <section class="section section--teal-lt" id="experience">
-      <div class="wrap">
-        <div class="sec-header">
-          <div>
-            <span class="label">Professional Journey</span>
-            <h2 class="heading-lg" style="margin-top:0.5rem;">Experience &amp; Startups</h2>
+    <!-- 02 NeurIPS -->
+    <section class="story" id="neurips" aria-labelledby="story-title">
+      <div class="wrap chapter__grid">
+        <p class="chapter__label" data-reveal><span class="mono">02</span>Featured</p>
+        <div class="story__grid">
+          <div class="story__text">
+            <p class="story__venue" data-reveal>GlobalSouthAI @ NeurIPS 2026 · Accepted</p>
+            <h2 class="story__title" id="story-title" data-split>Decomposing a clinical EEG montage for low-channel cognitive triage</h2>
+            <p class="story__summary" data-reveal>A few well-placed electrodes screened for cognitive impairment about as
+              well as a full clinical EEG, which points towards simpler and cheaper screening devices.</p>
+            <p class="story__authors" data-reveal><b>S. Ghosh</b>, R. N. Chaurasia, S. Sharma, N. Sharma</p>
+            <div data-reveal>
+              <a class="btn btn--light" href="https://github.com/soinikghosh9/lowchannel-eeg-triage"
+                target="_blank" rel="noopener">Code on GitHub
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>
+            </div>
           </div>
-          <span class="sec-header__count">07</span>
-        </div>
-
-        <div class="exp-grid reveal">
-          <div class="exp-card">
-            <span class="exp-card__date">2023 — Present</span>
-            <h3 class="exp-card__title">PhD Researcher &amp; Teaching Assistant</h3>
-            <p class="exp-card__loc">IIT (BHU) Varanasi</p>
-            <p class="exp-card__desc">Doctoral research in BCI, Neuroengineering, and Clinical AI. Responsibilities
-              include experimental design, multimodal biosignal collection (EEG/ECG), algorithm development, and
-              academic instruction.</p>
-          </div>
-          <div class="exp-card">
-            <span class="exp-card__date">2024 — Present</span>
-            <h3 class="exp-card__title">Co-Founder &amp; R&amp;D Lead</h3>
-            <p class="exp-card__loc"><strong>Hridae Medical Technologies Pvt. Ltd.</strong> (Start-up)
-              &nbsp;&middot;&nbsp; <a href="https://hridae.com" target="_blank"
-                style="color:var(--c-teal); font-weight:700;">hridae.com</a></p>
-            <p class="exp-card__desc">Architecting and fabricating low-noise embedded systems and AI imagery solutions
-              for cardiovascular health monitoring and neurotechnological applications.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════
-         EDUCATION
-    ══════════════════════════════════ -->
-    <section class="section" id="education">
-      <div class="wrap">
-        <div class="sec-header">
-          <div>
-            <span class="label">Academic Background</span>
-            <h2 class="heading-lg" style="margin-top:0.5rem;color:var(--c-dark);">Education</h2>
-          </div>
-          <span class="sec-header__count">08</span>
-        </div>
-
-        <div class="edu-grid reveal">
-          <div class="edu-card">
-            <span class="label" style="margin-bottom:1rem;display:block;">2023 – Present</span>
-            <p class="edu-card__degree">PhD · Biomedical Engineering</p>
-            <p class="edu-card__school">Indian Institute of Technology (BHU) Varanasi</p>
-            <p class="edu-card__meta">CGPA: 9.6 / 10</p>
-            <p class="edu-card__note">Focus: Biomedical Signal & Image Processing, BCI, AI, Mathematical Modelling</p>
-          </div>
-          <div class="edu-card">
-            <span class="label" style="margin-bottom:1rem;display:block;">2019 – 2021</span>
-            <p class="edu-card__degree">M.Sc · Physiology (Neuroscience)</p>
-            <p class="edu-card__school">University of Calcutta</p>
-            <p class="edu-card__meta">First Class · CGPA: 7.4 / 10</p>
-            <p class="edu-card__note">Thesis: "Neuropsychophysiological Behaviour of Adenosine: Crosstalks between
-              Neurotransmitters"</p>
-          </div>
-          <div class="edu-card">
-            <span class="label" style="margin-bottom:1rem;display:block;">2016 – 2019</span>
-            <p class="edu-card__degree">B.Sc · Human Physiology (Honours)</p>
-            <p class="edu-card__school">Surendranath College, University of Calcutta</p>
-            <p class="edu-card__meta">Kolkata, India</p>
-            <p class="edu-card__note">Foundation in physiological sciences and human biology</p>
-          </div>
+          <figure class="montage" data-step="1" aria-label="Scalp map: the 19-electrode montage reduces to T5 and T6">
+            <svg viewBox="0 0 300 300" aria-hidden="true">
+              <circle class="ring" cx="150" cy="150" r="142" />
+              <circle class="head" cx="150" cy="150" r="122" />
+              <path class="head" d="M136 29 150 12 164 29" />
+              <path class="head" d="M28 132q-12 18 0 36M272 132q12 18 0 36" />
+              <line class="pair" x1="72.3" y1="206.4" x2="227.7" y2="206.4" />
+              <g class="els"></g>
+            </svg>
+            <figcaption class="montage__key">
+              <span><i class="k k--on"></i>Kept (T5, T6)</span>
+              <span><i class="k"></i>Removed</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <!-- ══════════════════════════════════
-         AWARDS & TRAINING
-    ══════════════════════════════════ -->
-    <section class="section section--dark" id="awards">
-      <div class="wrap">
-        <div class="sec-header sec-header--dark">
-          <div>
-            <span class="label">Honors &amp; Recognition</span>
-            <h2 class="heading-lg" style="margin-top:0.5rem;color:var(--c-white);">Awards &amp; Training</h2>
-          </div>
-          <span class="sec-header__count" style="color:#fff;">09</span>
-        </div>
-
-        <div class="honors-grid reveal">
-          <div class="honors-col">
-            <h3 class="system-category__header" style="font-size:1.4rem; color:var(--c-teal);">Major Awards</h3>
-            <div class="honors-list">
-              <div class="honor-item">
-                <div class="honor-item__badge"><i class="fas fa-trophy"></i></div>
-                <p class="honor-item__text"><strong>Winner</strong> — Smart India Hackathon 2024 (Hardware Edition),
-                  Govt. of India</p>
+    <!-- 03 Research -->
+    <section class="chapter" id="research">
+      <div class="wrap chapter__grid">
+        <p class="chapter__label" data-reveal><span class="mono">03</span>Research</p>
+        <div class="chapter__body">
+          <h2 class="h2" data-split>Current work</h2>
+          <h3 class="index__group" data-reveal>Research</h3>
+          <ol class="index">
+            <li class="index__row" data-reveal>
+              <span class="index__tag mono">EEG</span>
+              <div>
+                <h3 class="index__title">Screening and triage for dementia</h3>
+                <p class="index__desc">Tools that help clinicians decide who needs a full cognitive assessment, using
+                  simpler EEG recordings.</p>
               </div>
-              <div class="honor-item">
-                <div class="honor-item__badge"><i class="fas fa-medal"></i></div>
-                <p class="honor-item__text"><strong>2nd Runner Up</strong> — PRAGATI Hackathon 2023, TIH Dristi IHUB
-                  &amp; IIT Jodhpur</p>
+            </li>
+            <li class="index__row" data-reveal>
+              <span class="index__tag mono">EEG</span>
+              <div>
+                <h3 class="index__title">Epilepsy monitoring and seizure forecasting</h3>
+                <p class="index__desc">Methods that adapt to each patient's EEG to detect seizures and estimate when
+                  seizure risk is rising.</p>
               </div>
-              <div class="honor-item">
-                <div class="honor-item__badge"><i class="fas fa-certificate"></i></div>
-                <p class="honor-item__text"><strong>GATE Qualified 2023</strong> — Life Sciences, All India Rank 1313
+            </li>
+            <li class="index__row" data-reveal>
+              <span class="index__tag mono">Imaging</span>
+              <div>
+                <h3 class="index__title">Automated medical image processing</h3>
+                <p class="index__desc">Pipelines that prepare, check and analyse images from different medical imaging
+                  modalities with minimal manual steps, so imaging studies can be run consistently and at scale.</p>
+              </div>
+            </li>
+          </ol>
+          <h3 class="index__group" data-reveal>Building</h3>
+          <ol class="index">
+            <li class="index__row" data-reveal>
+              <span class="index__tag mono">AI agents</span>
+              <div>
+                <h3 class="index__title">A local AI agent for research and clinical work</h3>
+                <p class="index__desc">A personal coding and research agent that runs entirely on an 8 GB laptop GPU, so
+                  data stay on the device. I am training its workflow to plan and complete multi-step tasks, from
+                  literature research and analysis code to complex clinical workflows.</p>
+              </div>
+            </li>
+            <li class="index__row" data-reveal>
+              <span class="index__tag mono">Wearables</span>
+              <div>
+                <h3 class="index__title">Precision cardiology and neurology at Hridae</h3>
+                <p class="index__desc">Wearable monitoring devices and analysis software, developed with clinicians.</p>
+                <a class="hridae-card" href="https://hridae.com/" target="_blank" rel="noopener">
+                  <img src="images/hridae-logo.png" width="73" height="80" alt="Hridae Medical Technologies" loading="lazy" />
+                  <span>hridae.com</span>
+                </a>
+              </div>
+            </li>
+            <li class="index__row" data-reveal>
+              <span class="index__tag mono">Cognition</span>
+              <div>
+                <h3 class="index__title">Cognitive assessment app</h3>
+                <p class="index__desc">Short cognitive tasks that run offline on a phone or laptop and track changes in
+                  each person over time. Designed to support screening, not to diagnose.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 Work: pinned horizontal gallery -->
+    <section class="gallery" id="work" aria-labelledby="work-title">
+      <div class="gallery__pin">
+        <div class="wrap chapter__grid gallery__head">
+          <p class="chapter__label" data-reveal><span class="mono">04</span>Work</p>
+          <div class="gallery__title">
+            <h2 class="h2" id="work-title" data-split>Selected projects</h2>
+            <div class="gallery__meter" aria-hidden="true"><span></span></div>
+          </div>
+        </div>
+        <div class="gallery__track">
+          <a class="build" href="https://github.com/soinikghosh9/GenEEG" target="_blank" rel="noopener">
+            <span class="build__meta mono"><span>Journal article</span><span>2025</span></span>
+            <svg class="build__trace" viewBox="0 0 300 80" preserveAspectRatio="none" aria-hidden="true"><path /></svg>
+            <h3>GenEEG</h3>
+            <p>Generates realistic patient-specific EEG to train seizure detectors when patient data are limited.</p>
+          </a>
+          <a class="build" href="https://github.com/soinikghosh9/EEG-Arduino" target="_blank" rel="noopener">
+            <span class="build__meta mono"><span>IEEE conference</span><span>2024</span></span>
+            <svg class="build__trace" viewBox="0 0 300 80" preserveAspectRatio="none" aria-hidden="true"><path /></svg>
+            <h3>Wearable EEG</h3>
+            <p>A low-cost single-channel EEG device that processes signals in real time.</p>
+          </a>
+          <a class="build" href="https://github.com/soinikghosh9/Hridayam" target="_blank" rel="noopener">
+            <span class="build__meta mono"><span>Smart India Hackathon, winner</span><span>2024</span></span>
+            <svg class="build__trace" viewBox="0 0 300 80" preserveAspectRatio="none" aria-hidden="true"><path /></svg>
+            <h3>Hridayam</h3>
+            <p>AI-assisted, non-invasive imaging for heart disease screening.</p>
+          </a>
+          <a class="build" href="https://github.com/soinikghosh9/Firefly" target="_blank" rel="noopener">
+            <span class="build__meta mono"><span>PRAGATI Hackathon</span><span>2023</span></span>
+            <svg class="build__trace" viewBox="0 0 300 80" preserveAspectRatio="none" aria-hidden="true"><path /></svg>
+            <h3>Firefly XR</h3>
+            <p>A virtual-reality guided robotic exosuit for stroke rehabilitation.</p>
+          </a>
+          <a class="build" href="https://github.com/soinikghosh9/GemSAM" target="_blank" rel="noopener">
+            <span class="build__meta mono"><span>Kaggle challenge</span><span>2026</span></span>
+            <svg class="build__trace" viewBox="0 0 300 80" preserveAspectRatio="none" aria-hidden="true"><path /></svg>
+            <h3>GemSAM</h3>
+            <p>Explainable medical image analysis that runs on small, low-power devices.</p>
+          </a>
+          <a class="build" href="https://github.com/soinikghosh9/Interictal-Network-Dynamics" target="_blank" rel="noopener">
+            <span class="build__meta mono"><span>Epilepsy</span><span>EEG</span></span>
+            <svg class="build__trace" viewBox="0 0 300 80" preserveAspectRatio="none" aria-hidden="true"><path /></svg>
+            <h3>Interictal networks</h3>
+            <p>How abnormal brain activity between seizures spreads across brain networks.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 Publications -->
+    <section class="chapter" id="publications">
+      <div class="wrap chapter__grid">
+        <p class="chapter__label" data-reveal><span class="mono">05</span>Publications</p>
+        <div class="chapter__body">
+          <ol class="pubs">
+            <li class="pub" data-reveal>
+              <span class="pub__year mono">2026</span>
+              <div>
+                <h3><a href="https://github.com/soinikghosh9/lowchannel-eeg-triage" target="_blank" rel="noopener">Decomposing a clinical EEG montage for low-channel cognitive triage: placement, age referencing and output design</a></h3>
+                <p class="pub__meta"><b>S. Ghosh</b>, R. N. Chaurasia, S. Sharma, N. Sharma · GlobalSouthAI @ NeurIPS 2026 <span class="pill">Accepted</span></p>
+              </div>
+            </li>
+            <li class="pub" data-reveal>
+              <span class="pub__year mono">2026</span>
+              <div>
+                <h3><a href="https://doi.org/10.1007/978-3-032-20634-3_28" target="_blank" rel="noopener">Decoding the neural dynamics of motor imagery and execution: an EEG-based investigation into conscious hand movement representation</a></h3>
+                <p class="pub__meta"><b>S. Ghosh</b>, F. Yasmeen, S. Sharma, N. Sharma · Proceedings of MBCC 2025, Springer</p>
+              </div>
+            </li>
+            <li class="pub" data-reveal>
+              <span class="pub__year mono">2026</span>
+              <div>
+                <h3><a href="https://doi.org/10.1007/978-3-032-20634-3_21" target="_blank" rel="noopener">ME-GSE: an end-to-end classification of motor imagery EEG signals using graph-based spectral embedding</a></h3>
+                <p class="pub__meta">F. Yasmeen, <b>S. Ghosh</b>, P. Jangra, N. Sharma, S. Sharma · Proceedings of MBCC 2025, Springer</p>
+              </div>
+            </li>
+            <li class="pub" data-reveal>
+              <span class="pub__year mono">2025</span>
+              <div>
+                <h3><a href="https://doi.org/10.1016/j.compbiomed.2025.111398" target="_blank" rel="noopener">GenEEG: Improving epileptic EEG detection through patient-adaptive latent diffusion and continual learning</a></h3>
+                <p class="pub__meta"><b>S. Ghosh</b>, S. Sharma, N. Sharma · <i>Computers in Biology and Medicine</i> 201, 111398</p>
+              </div>
+            </li>
+            <li class="pub" data-reveal>
+              <span class="pub__year mono">2025</span>
+              <div>
+                <h3><a href="https://doi.org/10.1109/ICCSAI64074.2025.11064720" target="_blank" rel="noopener">A hybrid classical-quantum model for enhanced MRI-based brain tumor classification using transfer learning and quantum neural networks</a></h3>
+                <p class="pub__meta">Co-author · IEEE ICCSAI 2025</p>
+              </div>
+            </li>
+            <li class="pub" data-reveal>
+              <span class="pub__year mono">2024</span>
+              <div>
+                <h3><a href="https://doi.org/10.1109/AKGEC62572.2024.10868917" target="_blank" rel="noopener">Real-time brain signals monitoring system using single-channel EEG for BCI applications</a></h3>
+                <p class="pub__meta"><b>S. Ghosh</b>, C. Parikshith, F. Yasmeen, A. K. Srivastava, S. Sharma, N. Sharma · IEEE AKGEC 2024</p>
+              </div>
+            </li>
+            <li class="pub" data-reveal>
+              <span class="pub__year mono">2024</span>
+              <div>
+                <h3><a href="https://doi.org/10.1109/INSPECT63485.2024.10896072" target="_blank" rel="noopener">Development of a haptic exo-suit with tactile feedback in hand rehabilitation</a></h3>
+                <p class="pub__meta">P. Chavakula, <b>S. Ghosh</b>, N. Sharma, D. Kumar · IEEE INSPECT 2024</p>
+              </div>
+            </li>
+          </ol>
+          <p class="pubs__more" data-reveal><a class="arrow-link" href="https://scholar.google.com/citations?user=l9U73kcAAAAJ&amp;hl=en" target="_blank" rel="noopener">All publications on Google Scholar</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 Background -->
+    <section class="chapter chapter--tint" id="background">
+      <div class="wrap chapter__grid">
+        <p class="chapter__label" data-reveal><span class="mono">06</span>Background</p>
+        <div class="chapter__body">
+          <h2 class="h2" data-split>Education and experience</h2>
+          <div class="background">
+            <ol class="timeline">
+              <li data-reveal>
+                <time>2026 – now</time>
+                <h3>Co-Founder &amp; CTO</h3>
+                <p><a class="hridae-link" href="https://hridae.com/" target="_blank" rel="noopener"><img src="images/hridae-mark.png" width="18" height="17" alt="" loading="lazy" />Hridae Medical Technologies</a></p>
+                <p class="timeline__note">Wearable monitoring for precision cardiology and neurology.</p>
+              </li>
+              <li data-reveal>
+                <time>2023 – now</time>
+                <h3>PhD, Biomedical Engineering</h3>
+                <p>IIT (BHU) Varanasi</p>
+                <p class="timeline__note">EEG-based screening, triage and clinical decision-support tools.</p>
+              </li>
+              <li data-reveal>
+                <time>2019 – 2021</time>
+                <h3>M.Sc, Physiology (Neuroscience)</h3>
+                <p>University of Calcutta</p>
+              </li>
+              <li data-reveal>
+                <time>2016 – 2019</time>
+                <h3>B.Sc, Human Physiology</h3>
+                <p>Surendranath College, University of Calcutta</p>
+              </li>
+            </ol>
+            <div class="recognition" data-reveal>
+              <h3 class="minor">Recognition</h3>
+              <ul>
+                <li><b>Winner</b>, Smart India Hackathon 2024 (Hardware)</li>
+                <li><b>Second runner-up</b>, PRAGATI Hackathon 2023, IIT Jodhpur</li>
+                <li><b>Qualified</b>, GATE 2023, Life Sciences</li>
+              </ul>
+              <h3 class="minor">Training</h3>
+              <ul>
+                <li>g.tec BCI &amp; Neurotechnology Spring School 2025</li>
+                <li>Brain modelling, Neurogati / CNS Lab, IIT Madras</li>
+                <li>SERB Karyashala, IIT Roorkee</li>
+                <li>CSIR-IICB molecular biology programme</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 Art -->
+    <section class="chapter" id="art">
+      <div class="wrap chapter__grid">
+        <p class="chapter__label" data-reveal><span class="mono">07</span>Art</p>
+        <div class="chapter__body">
+          <h2 class="h2" data-split>Independent artist, musician and filmmaker</h2>
+          <div class="art">
+            <div class="art__row" data-reveal>
+              <div class="art__main">
+                <h3 class="art__word">Music</h3>
+                <p class="art__links">
+                  <a class="arrow-link" href="https://open.spotify.com/artist/3VprLdYpRRnk0ymHHozFOb/" target="_blank" rel="noopener">Spotify</a>
+                  <a class="arrow-link" href="https://www.youtube.com/@OfficialPsychedelics" target="_blank" rel="noopener">YouTube</a>
                 </p>
               </div>
+              <div class="eq" aria-hidden="true"></div>
             </div>
-          </div>
-
-          <div class="honors-col">
-            <h3 class="system-category__header" style="font-size:1.4rem; color:var(--c-teal);">Advanced Training</h3>
-            <div class="honors-list">
-              <div class="honor-item">
-                <div class="honor-item__badge"><i class="fas fa-graduation-cap"></i></div>
-                <p class="honor-item__text"><strong>g.tec BCI &amp; Neurotechnology Spring School 2025</strong> —
-                  Austria (BCI Training)</p>
+            <div class="art__row" data-reveal>
+              <div class="art__main">
+                <h3 class="art__word">Film</h3>
+                <p class="art__links">
+                  <a class="arrow-link" href="https://www.imdb.com/name/nm14161356/" target="_blank" rel="noopener">IMDb</a>
+                  <a class="arrow-link" href="https://www.youtube.com/watch?v=DJnyU5DOGh8" target="_blank" rel="noopener">Short film</a>
+                  <a class="arrow-link" href="https://www.instagram.com/soinikghosh9/" target="_blank" rel="noopener">Instagram</a>
+                </p>
               </div>
-              <div class="honor-item">
-                <div class="honor-item__badge"><i class="fas fa-project-diagram"></i></div>
-                <p class="honor-item__text"><strong>Neurogati CNS Lab (IIT Madras)</strong> — Brain Modeling &amp;
-                  Brain-inspired AI</p>
-              </div>
-              <div class="honor-item">
-                <div class="honor-item__badge"><i class="fas fa-microchip"></i></div>
-                <p class="honor-item__text"><strong>SERB KARYASHALA (IIT Roorkee)</strong> — AI in Human Brain-Computer
-                  Interaction</p>
-              </div>
-              <div class="honor-item">
-                <div class="honor-item__badge"><i class="fas fa-vial"></i></div>
-                <p class="honor-item__text"><strong>CSIR-IICB Skill Program</strong> — Molecular Biology &amp;
-                  Characterization</p>
-              </div>
+              <div class="reel" aria-hidden="true"><div class="reel__track"></div></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ══════════════════════════════════
-         RESEARCH PHILOSOPHY & BEYOND
-    ══════════════════════════════════ -->
-    <section class="section" id="beyond">
+    <!-- Contact -->
+    <section class="contact" id="contact">
       <div class="wrap">
-        <div class="sec-header">
-          <div>
-            <span class="label">Perspective</span>
-            <h2 class="heading-lg" style="margin-top:0.5rem;">Research Philosophy</h2>
-          </div>
-          <span class="sec-header__count">10</span>
+        <h2 class="contact__title" data-split>Interested in working together on clinical tools? Get in touch.</h2>
+        <p class="contact__open" data-reveal>Open to research and engineering roles, internships and collaborations in
+          clinical AI, medical imaging, on-device AI and AI agents.</p>
+        <div class="contact__grid" data-stagger>
+          <a class="contact__mail" href="mailto:soinikghosh.rs.bme23@itbhu.ac.in" data-reveal>soinikghosh.rs.bme23@itbhu.ac.in</a>
+          <a class="contact__mail contact__mail--alt" href="mailto:soinikghosh9@gmail.com" data-reveal>soinikghosh9@gmail.com</a>
         </div>
-
-        <div class="reveal" style="max-width:900px; margin-bottom:5rem;">
-          <p class="body-lg" style="color:var(--c-dark); line-height:1.7; font-size:1.15rem;">
-            "I am interested in understanding the brain not only as a biological organ but as a computational system.
-            Many neurological diseases can be viewed as disorders of dynamical systems and network behavior. By
-            combining computational neuroscience, artificial intelligence, and physiological modeling, I aim to build
-            models that can predict disease onset, progression, and treatment response. ultimately, I believe future
-            healthcare systems will rely on continuous physiological monitoring, computational modeling, and intelligent
-            decision systems — and my work is focused on building components of such medical intelligence systems."
-          </p>
-        </div>
-
-        <!-- Beyond Science -->
-        <div class="sec-header">
-          <div>
-            <span class="label">Arts &amp; Creative Work</span>
-            <h2 class="heading-lg" style="margin-top:0.5rem;">Beyond Science</h2>
-          </div>
-        </div>
-
-        <div class="arts-grid reveal">
-          <div class="art-card">
-            <div class="art-card__icon"><i class="fas fa-music"></i></div>
-            <h3 class="art-card__title">Music &amp; Soundscapes</h3>
-            <p class="art-card__desc">Multi-instrumentalist and music composer. Performing as <em>Psychedelics</em> —
-              exploring the neural basis of creativity through original compositions and audio experimentation.</p>
-            <div class="art-links">
-              <a href="https://open.spotify.com/artist/3VprLdYpRRnk0ymHHozFOb/" target="_blank" class="art-link">
-                <i class="fab fa-spotify"></i> Psychedelics — Spotify
-              </a>
-              <a href="https://www.youtube.com/@OfficialPsychedelics" target="_blank" class="art-link">
-                <i class="fab fa-youtube"></i> Psychedelics — YouTube
-              </a>
-            </div>
-          </div>
-
-          <div class="art-card">
-            <div class="art-card__icon"><i class="fas fa-film"></i></div>
-            <h3 class="art-card__title">Cinema &amp; Screenwriting</h3>
-            <p class="art-card__desc">Independent filmmaker and screenwriter. Creating visual narratives that examine
-              the human condition, consciousness, and the poetry of impermanence.</p>
-            <div class="art-links">
-              <a href="https://www.imdb.com/name/nm14161356/" target="_blank" class="art-link">
-                <i class="fab fa-imdb"></i> IMDb Filmography
-              </a>
-              <a href="https://www.youtube.com/watch?v=DJnyU5DOGh8" target="_blank" class="art-link">
-                <i class="fab fa-youtube"></i> Short Film I
-              </a>
-              <a href="https://www.instagram.com/soinikghosh9/" target="_blank" class="art-link">
-                <i class="fab fa-instagram"></i> Instagram Profile
-              </a>
-            </div>
-          </div>
+        <div class="contact__foot" data-reveal>
+          <ul class="contact__links">
+            <li><a href="https://www.linkedin.com/in/soinik-ghosh-103411270" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin" /></svg></a></li>
+            <li><a href="https://github.com/soinikghosh9" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-github" /></svg></a></li>
+            <li><a href="https://orcid.org/0009-0000-8277-8710" target="_blank" rel="noopener" aria-label="ORCID"><svg><use href="#i-orcid" /></svg></a></li>
+            <li><a href="https://scholar.google.com/citations?user=l9U73kcAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><svg><use href="#i-scholar" /></svg></a></li>
+            <li><a href="documents/Soinik_Ghosh_CV.pdf" target="_blank" rel="noopener" aria-label="CV (PDF)"><svg><use href="#i-doc" /></svg></a></li>
+          </ul>
         </div>
       </div>
     </section>
-
-    <!-- ══════════════════════════════════
-         CONTACT
-    ══════════════════════════════════ -->
-    <section class="section section--teal-lt" id="contact">
-      <div class="wrap">
-        <div class="sec-header">
-          <div>
-            <span class="label">Get in Touch</span>
-            <h2 class="heading-lg" style="margin-top:0.5rem;">Contact / Collaboration</h2>
-          </div>
-          <span class="sec-header__count">11</span>
-        </div>
-
-        <div class="contact-card reveal">
-          <h3 class="heading-md" style="margin-bottom:1.25rem;">Open to collaboration</h3>
-          <p class="contact-card__text">Based at IIT-BHU Varanasi & Kolkata, India. Actively seeking high-impact
-            research collaborations in core algorithmic neuro-AI modeling, hardware prototyping of medical devices, and
-            intelligent clinical setups.</p>
-          <a href="https://scholar.google.com/citations?user=l9U73kcAAAAJ&hl=en" target="_blank"
-            title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-        </div>
-      </div>
-      </div>
-      </div>
-    </section>
-
   </main>
 
-  <!-- ══════════════════════════════════
-       FOOTER
-  ══════════════════════════════════ -->
   <footer class="footer">
     <div class="wrap footer__inner">
-      <p class="footer__text">© <span id="yr"></span> Soinik Ghosh. Computational Modeling of Brain and Diseases →
-        Brain-Inspired AI → Intelligent Clinical Systems</p>
-      <div class="footer__links">
-        <a href="#vision">Research</a>
-        <a href="documents/Soinik_Ghosh_CV.pdf" target="_blank">CV</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <p>© <span data-year>2026</span> Soinik Ghosh · Varanasi &amp; Kolkata</p>
+      <a href="#top">Back to top ↑</a>
     </div>
   </footer>
-
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="js/FloatingLines.js"></script>
-  <script src="js/main.js"></script>
-  <script>
-    // Year
-    document.getElementById('yr').textContent = new Date().getFullYear();
-
-    // Scroll reveal
-    // Handled by main.js to prevent conflicts
-
-    // Floating Lines shader
-    document.addEventListener('DOMContentLoaded', () => {
-      try {
-        if (typeof THREE !== 'undefined' && typeof FloatingLines !== 'undefined') {
-          new FloatingLines('bg-canvas', {
-            linesGradient: ['#367D8A', '#285F6B', '#133336'],
-            lineCount: 6,
-            interactive: true,
-            parallax: true,
-            parallaxStrength: 0.08
-          });
-        }
-      } catch (e) { /* shader optional */ }
-    });
-  </script>
-
 </body>
 
 </html>
