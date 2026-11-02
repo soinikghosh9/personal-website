@@ -167,7 +167,8 @@
               modalities, and a personal AI agent that runs locally on a laptop GPU, which I am training to carry out
               coding, research and clinical workflow tasks. At Hridae Medical Technologies, which I co-founded, we
               develop wearable monitoring for precision cardiology and neurology. I studied physiology and neuroscience
-              before engineering, and I work closely with neurologists at the Institute of Medical Sciences, BHU.</p>
+              before engineering. I collaborate with clinicians and researchers at the Institute of Medical Sciences
+              (BHU), AIIMS New Delhi, IIT Kanpur and IIT Kharagpur.</p>
           </div>
           <dl class="skills" data-stagger>
             <div data-reveal><dt>Signals and images</dt><dd>EEG, ECG, heart sounds and multiple medical imaging modalities</dd></div>
@@ -183,7 +184,8 @@
               for medical images and a local AI agent, running on a laptop GPU, for research and clinical workflows. Hridae
               develops wearable monitoring for precision cardiology and neurology. Work on reduced-electrode EEG for
               cognitive screening, carried out with neurologists at the Institute of Medical Sciences, BHU, was accepted
-              at the GlobalSouthAI workshop at NeurIPS 2026. Soinik studied physiology and neuroscience at the
+              at the GlobalSouthAI workshop at NeurIPS 2026. Collaborators include clinicians and researchers at
+              IMS BHU, AIIMS New Delhi, IIT Kanpur and IIT Kharagpur. Soinik studied physiology and neuroscience at the
               University of Calcutta before moving into engineering.</p>
             <button class="btn btn--small btn--ghost" type="button" data-copy="#speaker-bio">Copy bio</button>
           </details>
@@ -208,19 +210,13 @@
                 <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" /></svg></a>
             </div>
           </div>
-          <figure class="montage" data-step="1" aria-label="Scalp map: the 19-electrode montage reduces to T5 and T6">
-            <svg viewBox="0 0 300 300" aria-hidden="true">
-              <circle class="ring" cx="150" cy="150" r="142" />
-              <circle class="head" cx="150" cy="150" r="122" />
-              <path class="head" d="M136 29 150 12 164 29" />
-              <path class="head" d="M28 132q-12 18 0 36M272 132q12 18 0 36" />
-              <line class="pair" x1="72.3" y1="206.4" x2="227.7" y2="206.4" />
-              <g class="els"></g>
-            </svg>
-            <figcaption class="montage__key">
-              <span><i class="k k--on"></i>Kept (T5, T6)</span>
-              <span><i class="k"></i>Removed</span>
-            </figcaption>
+          <figure class="framework" data-reveal>
+            <div class="framework__scroll">
+              <img src="images/neurips-framework.webp" width="1389" height="426" loading="lazy" decoding="async"
+                alt="Study framework. Input: clinical 10-20 EEG recordings. Sensor layer: the recordings re-derived as simulated devices across montages, sampling rates, bit depths and preprocessing. Model layer: a fixed classifier family and training protocol on qEEG markers for dementia, MCI and screening, comparing age, EEG, EEG plus age and age-referenced deviation. Output: performance scored against age, with a per-recording deviation profile." />
+            </div>
+            <figcaption>Study design, from clinical recording to age-referenced output.
+              <a class="arrow-link" href="images/neurips-framework.webp" target="_blank" rel="noopener">Open full size</a></figcaption>
           </figure>
         </div>
       </div>
@@ -425,6 +421,7 @@
                 <h3>PhD, Biomedical Engineering</h3>
                 <p>IIT (BHU) Varanasi</p>
                 <p class="timeline__note">EEG-based screening, triage and clinical decision-support tools.</p>
+                <p class="timeline__note">In collaboration with IMS BHU, AIIMS New Delhi, IIT Kanpur and IIT Kharagpur.</p>
               </li>
               <li data-reveal>
                 <time>2019 – 2021</time>

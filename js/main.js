@@ -77,46 +77,6 @@
   drawer.addEventListener('click', (e) => { if (e.target.closest('a')) setDrawer(false); });
   addEventListener('keydown', (e) => { if (e.key === 'Escape' && !drawer.hidden) setDrawer(false); });
 
-  // Featured paper: the 19-electrode montage reduces to T5-T6 once it is seen.
-  const montage = $('.montage');
-  if (montage) {
-    const ELECTRODES = [
-      ['Fp1', 120.3, 58.7], ['Fp2', 179.7, 58.7], ['F7', 72.3, 93.6], ['F3', 111, 106], ['Fz', 150, 102],
-      ['F4', 189, 106], ['F8', 227.7, 93.6], ['T3', 54, 150], ['C3', 102, 150], ['Cz', 150, 150],
-      ['C4', 198, 150], ['T4', 246, 150], ['T5', 72.3, 206.4], ['P3', 111, 194], ['Pz', 150, 198],
-      ['P4', 189, 194], ['T6', 227.7, 206.4], ['O1', 120.3, 241.3], ['O2', 179.7, 241.3],
-    ];
-    const ns = 'http://www.w3.org/2000/svg';
-    const g = $('.els', montage);
-    const els = ELECTRODES.map(([name, x, y], k) => {
-      const el = document.createElementNS(ns, 'g');
-      el.setAttribute('class', 'el is-on');
-      el.dataset.ch = name;
-      el.style.setProperty('--k', k);
-      const c = document.createElementNS(ns, 'circle');
-      c.setAttribute('cx', x); c.setAttribute('cy', y); c.setAttribute('r', 12);
-      const t = document.createElementNS(ns, 'text');
-      t.setAttribute('x', x); t.setAttribute('y', y);
-      t.textContent = name;
-      el.append(c, t);
-      g.appendChild(el);
-      return el;
-    });
-    const reduceTo = () => {
-      montage.dataset.step = '3';
-      els.forEach((el) => {
-        const keep = el.dataset.ch === 'T5' || el.dataset.ch === 'T6';
-        el.classList.toggle('is-on', keep);
-        el.classList.toggle('is-off', !keep);
-      });
-    };
-    new IntersectionObserver(([e], io) => {
-      if (!e.isIntersecting) return;
-      io.disconnect();
-      setTimeout(reduceTo, reduce ? 0 : 900);
-    }, { threshold: 0.55 }).observe(montage);
-  }
-
   // Signal traces on the work cards, seeded per card so each one differs.
   $$('.build__trace path').forEach((path, idx) => {
     let seed = idx * 9301 + 49297;
