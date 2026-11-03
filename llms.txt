@@ -1,0 +1,42 @@
+# Soinik Ghosh
+
+> PhD researcher in biomedical engineering at IIT (BHU) Varanasi, India, working on AI for clinical neurophysiology and medical imaging. Co-Founder and CTO of Hridae Medical Technologies (https://hridae.com/), which develops wearable monitoring for precision cardiology and neurology.
+
+Soinik Ghosh's PhD at the School of Biomedical Engineering, IIT (BHU) Varanasi, develops EEG-based screening, triage and clinical decision-support tools for dementia and epilepsy. The aim is tools that are interpretable (a clinician can see which signal features led to a result) and reliable (they keep working on patients from hospitals not used to build them). Soinik collaborates with clinicians and researchers at the Institute of Medical Sciences (BHU), AIIMS New Delhi, IIT Kanpur and IIT Kharagpur. Soinik studied physiology and neuroscience at the University of Calcutta (M.Sc Physiology, B.Sc Human Physiology) before moving into engineering.
+
+## Current work
+
+- Screening and triage for dementia: EEG tools that help clinicians decide who needs a full cognitive assessment, using simpler recordings.
+- Epilepsy monitoring and seizure forecasting: patient-adaptive methods to detect seizures and estimate when seizure risk is rising.
+- Automated medical image processing: pipelines that prepare, check and analyse images across medical imaging modalities.
+- A local AI agent for research and clinical work: a coding and research agent that runs on an 8 GB laptop GPU, so data stay on the device.
+- Hridae: wearable monitoring devices and analysis software for precision cardiology and neurology.
+- Cognitive assessment app: short offline cognitive tasks that track change in each person over time, to support screening.
+
+## Featured paper
+
+- [Decomposing a clinical EEG montage for low-channel cognitive triage: placement, age referencing and output design](https://github.com/soinikghosh9/lowchannel-eeg-triage): S. Ghosh, R. N. Chaurasia, S. Sharma, N. Sharma. Accepted at GlobalSouthAI @ NeurIPS 2026. Code on GitHub.
+
+## Publications
+
+- [GenEEG: Improving epileptic EEG detection through patient-adaptive latent diffusion and continual learning](https://doi.org/10.1016/j.compbiomed.2025.111398): Computers in Biology and Medicine, 2025.
+- [Decoding the neural dynamics of motor imagery and execution: an EEG-based investigation into conscious hand movement representation](https://doi.org/10.1007/978-3-032-20634-3_28): Proceedings of MBCC 2025, Springer.
+- [ME-GSE: an end-to-end classification of motor imagery EEG signals using graph-based spectral embedding](https://doi.org/10.1007/978-3-032-20634-3_21): Proceedings of MBCC 2025, Springer.
+- [A hybrid classical-quantum model for enhanced MRI-based brain tumor classification](https://doi.org/10.1109/ICCSAI64074.2025.11064720): IEEE ICCSAI 2025.
+- [Real-time brain signals monitoring system using single-channel EEG for BCI applications](https://doi.org/10.1109/AKGEC62572.2024.10868917): IEEE AKGEC 2024.
+- [Development of a haptic exo-suit with tactile feedback in hand rehabilitation](https://doi.org/10.1109/INSPECT63485.2024.10896072): IEEE INSPECT 2024.
+
+## Links
+
+- [Website](https://soinikghosh9.github.io/personal-website/)
+- [CV (PDF)](https://soinikghosh9.github.io/personal-website/documents/Soinik_Ghosh_CV.pdf)
+- [Google Scholar](https://scholar.google.com/citations?user=l9U73kcAAAAJ)
+- [ORCID](https://orcid.org/0009-0000-8277-8710)
+- [GitHub](https://github.com/soinikghosh9)
+- [LinkedIn](https://www.linkedin.com/in/soinik-ghosh-103411270)
+- Email: soinikghosh.rs.bme23@itbhu.ac.in
+
+## Optional
+
+- Also an independent artist, musician and filmmaker ([IMDb](https://www.imdb.com/name/nm14161356/)).
+- Open to research and engineering roles, internships and collaborations in clinical AI, medical imaging, on-device AI and AI agents.

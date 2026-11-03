@@ -8,24 +8,21 @@
 
   $$('[data-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
 
-  // Split headings into masked words; screen readers get the plain text.
+  // Split headings into masked words. The words stay in reading order, so the heading text
+  // is not duplicated for crawlers or screen readers.
   $$('[data-split]').forEach((el) => {
     const text = el.textContent.trim().replace(/\s+/g, ' ');
-    const sr = document.createElement('span');
-    sr.className = 'sr-only';
-    sr.textContent = text;
     const frag = document.createDocumentFragment();
     text.split(' ').forEach((word, i) => {
       const outer = document.createElement('span');
       outer.className = 'w';
-      outer.setAttribute('aria-hidden', 'true');
       const inner = document.createElement('span');
       inner.style.setProperty('--wi', i);
       inner.textContent = word;
       outer.appendChild(inner);
       frag.append(outer, ' ');
     });
-    el.replaceChildren(sr, frag);
+    el.replaceChildren(frag);
   });
 
   // Load-in, after fonts settle so words don't reflow mid-animation.
