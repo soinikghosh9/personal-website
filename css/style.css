@@ -284,12 +284,12 @@ main, .footer { position: relative; z-index: 1; }
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg);
   transition: border-color .4s var(--ease), transform .7s var(--ease);
 }
-.build:hover { border-color: rgba(46, 139, 154, 0.5); transform: translateY(-6px); }
+a.build:hover { border-color: rgba(46, 139, 154, 0.5); transform: translateY(-6px); }
 .build__meta { display: flex; justify-content: space-between; gap: 12px; font-size: 0.72rem; color: var(--ink-3); }
 .build__meta span:last-child { color: var(--teal-deep); }
 .build__trace { width: 100%; height: 80px; margin: auto 0; overflow: visible; }
 .build__trace path { fill: none; stroke: var(--teal); stroke-width: 1.3; stroke-linecap: round; vector-effect: non-scaling-stroke; opacity: .55; transition: opacity .4s; }
-.build:hover .build__trace path { opacity: 1; animation: trace 1.6s var(--ease); }
+a.build:hover .build__trace path { opacity: 1; animation: trace 1.6s var(--ease); }
 @keyframes trace { from { stroke-dashoffset: var(--len); } to { stroke-dashoffset: 0; } }
 .build h3 { font-family: var(--display); font-weight: 500; font-size: 1.6rem; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 10px; }
 .build p { font-size: 0.925rem; color: var(--ink-2); line-height: 1.5; }

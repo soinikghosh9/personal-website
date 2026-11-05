@@ -3,12 +3,12 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://soinikghosh9.github.io/personal-website/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <image:image><image:loc>https://soinikghosh9.github.io/personal-website/images/portrait-1100.webp</image:loc></image:image>
     <image:image><image:loc>https://soinikghosh9.github.io/personal-website/images/neurips-framework.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://soinikghosh9.github.io/personal-website/documents/Soinik_Ghosh_CV.pdf</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
   </url>
 </urlset>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Soinik Ghosh, Curriculum Vitae</title>
+<style>
+  @page { size: A4; margin: 12.7mm 12.7mm 12mm; }
+  :root { --accent: #0F4048; --muted: #50606A; --rule: #0F4048; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 9.4pt; line-height: 1.27; color: #15201f; }
+  a { color: var(--accent); text-decoration: none; }
+  header { display: grid; grid-template-columns: 27mm 1fr; gap: 6mm; align-items: center; margin-bottom: 4mm; }
+  header img { width: 25mm; height: 25mm; border-radius: 50%; object-fit: cover; }
+  h1 { font-size: 26pt; font-variant: small-caps; color: var(--accent); letter-spacing: .01em; line-height: 1; margin-bottom: 1.6mm; }
+  .role { font-size: 10.5pt; margin-bottom: 1.6mm; }
+  .contact { font-size: 8.6pt; color: #26302f; line-height: 1.45; }
+  .contact span + span::before { content: ' | '; color: #8a9696; }
+  h2 { font-size: 11.5pt; font-variant: small-caps; color: var(--accent); border-bottom: .6pt solid var(--rule); margin: 2.7mm 0 1.2mm; padding-bottom: .4mm; break-after: avoid; }
+  p { margin: 0; }
+  .row { display: flex; justify-content: space-between; gap: 4mm; }
+  .entry { margin-bottom: 1.5mm; break-inside: avoid; }
+  .entry .row b { font-weight: 700; }
+  .entry .row i { white-space: nowrap; }
+  .note { font-size: 8.4pt; font-style: italic; }
+  .desc { font-size: 9pt; }
+  ul { padding-left: 4.2mm; }
+  li { margin: .5mm 0; }
+  h3 { font-size: 9.4pt; margin: 1.6mm 0 .4mm; }
+  .skills { display: grid; grid-template-columns: 30mm 1fr; gap: .8mm 3mm; font-size: 9pt; }
+  .small { font-size: 8.6pt; }
+</style>
+</head>
+<body>
+<header>
+  <img src="profile-photo.jpeg" alt="" />
+  <div>
+    <h1>Soinik Ghosh</h1>
+    <p class="role">PhD Researcher, Biomedical Engineering &bull; Co-Founder, Hridae Medical Technologies</p>
+    <p class="contact">
+      <span>School of Biomedical Engineering, IIT (BHU) Varanasi</span><span>Kolkata, India</span><br />
+      <span>(+91) 98756 81292</span><span><a href="mailto:soinikghosh.rs.bme23@itbhu.ac.in">soinikghosh.rs.bme23@itbhu.ac.in</a></span><span><a href="mailto:soinikghosh9@gmail.com">soinikghosh9@gmail.com</a></span><br />
+      <span><a href="https://soinikghosh9.github.io/personal-website/">soinikghosh9.github.io/personal-website</a></span><span><a href="https://scholar.google.com/citations?user=l9U73kcAAAAJ&amp;hl=en">Google Scholar</a></span><span>ORCID <a href="https://orcid.org/0009-0000-8277-8710">0009-0000-8277-8710</a></span><br />
+      <span><a href="https://github.com/soinikghosh9">github.com/soinikghosh9</a></span><span><a href="https://www.linkedin.com/in/soinik-ghosh-103411270">linkedin.com/in/soinik-ghosh-103411270</a></span>
+    </p>
+  </div>
+</header>
+
+<h2>Research Profile</h2>
+<p class="desc">PhD researcher in biomedical engineering working on AI for clinical neurophysiology and medical imaging. My doctoral research develops EEG-based screening, triage and decision-support tools for dementia and epilepsy, with an emphasis on interpretable signal features and testing on independent clinical cohorts. This includes first-author work on reduced-electrode EEG for cognitive screening, accepted at GlobalSouthAI @ NeurIPS 2026, and on patient-adaptive seizure detection, published in Computers in Biology and Medicine. I also build automated medical imaging pipelines and lightweight AI agents that run locally. As a co-founder of Hridae Medical Technologies, I work on wearable monitoring and ECG models for precision cardiology and neurology. I trained in physiology and neuroscience before moving into engineering.</p>
+
+<h2>Education</h2>
+<div class="entry">
+  <div class="row"><b>Indian Institute of Technology (BHU) Varanasi</b><i>Varanasi, India</i></div>
+  <div class="row"><i>PhD in Biomedical Engineering (CGPA: 9.6/10)</i><span>07/2023 – Present</span></div>
+  <p class="note">Thesis area: EEG-based screening, triage and clinical decision support.</p>
+</div>
+<div class="entry">
+  <div class="row"><b>University of Calcutta</b><i>Kolkata, India</i></div>
+  <div class="row"><i>M.Sc in Physiology (Neuroscience specialisation), First Class (CGPA: 7.4/10)</i><span>09/2019 – 09/2021</span></div>
+  <p class="note">Thesis: “Neuropsychophysiological Behaviour of Adenosine: Crosstalks between Neurotransmitters”</p>
+</div>
+<div class="entry">
+  <div class="row"><b>Surendranath College, University of Calcutta</b><i>Kolkata, India</i></div>
+  <div class="row"><i>B.Sc in Human Physiology (Honours)</i><span>07/2016 – 06/2019</span></div>
+</div>
+
+<h2>Positions</h2>
+<div class="entry">
+  <div class="row"><b>Co-Founder, Hridae Medical Technologies Pvt. Ltd.</b><i>01/2026 – Present</i></div>
+  <p class="desc">Wearable monitoring for precision cardiology and neurology: devices, ECG and other analysis models, and clinician review software, developed with clinicians.</p>
+</div>
+<div class="entry">
+  <div class="row"><b>Doctoral Researcher &amp; Teaching Assistant, School of Biomedical Engineering, IIT (BHU)</b><i>07/2023 – Present</i></div>
+  <p class="desc">EEG-based screening and triage tools and clinical decision-support systems, with a focus on interpretability and testing on independent cohorts. In collaboration with the Department of Neurology, IMS BHU, and with AIIMS New Delhi, IIT Kanpur and IIT Kharagpur. Experimental design, data collection and analysis, algorithm development, scientific writing and teaching.</p>
+</div>
+
+<h2>Publications</h2>
+<p class="note">Published and accepted work only. Full list on <a href="https://scholar.google.com/citations?user=l9U73kcAAAAJ&amp;hl=en">Google Scholar</a>.</p>
+<h3>Journal articles</h3>
+<ul>
+  <li><b>S. Ghosh</b>, S. Sharma, N. Sharma. <a href="https://doi.org/10.1016/j.compbiomed.2025.111398"><i>GenEEG: Improving epileptic EEG detection through patient-adaptive latent diffusion and continual learning.</i></a> Computers in Biology and Medicine, vol. 201, 111398 (2026).</li>
+</ul>
+<h3>Book chapters</h3>
+<ul>
+  <li><b>S. Ghosh</b>, F. Yasmeen, S. Sharma, N. Sharma. <a href="https://doi.org/10.1007/978-3-032-20634-3_28"><i>Decoding the neural dynamics of motor imagery and execution: an EEG-based investigation into conscious hand movement representation.</i></a> In: Cognitive Biomarkers and BCI Applications, Proceedings of MBCC 2025, Springer, 2026, pp. 311–322.</li>
+  <li>F. Yasmeen, <b>S. Ghosh</b>, P. Jangra, N. Sharma, S. Sharma. <a href="https://doi.org/10.1007/978-3-032-20634-3_21"><i>ME-GSE: an end-to-end classification of motor imagery EEG signals using graph-based spectral embedding.</i></a> In: Cognitive Biomarkers and BCI Applications, Proceedings of MBCC 2025, Springer, 2026.</li>
+</ul>
+
+<h3>Workshop and conference papers</h3>
+<ul>
+  <li><b>S. Ghosh</b>, R. N. Chaurasia, S. Sharma, N. Sharma. <i>Decomposing a clinical EEG montage for low-channel cognitive triage: placement, age referencing and output design.</i> GlobalSouthAI Workshop @ NeurIPS 2026, Sydney (accepted). <a href="https://github.com/soinikghosh9/lowchannel-eeg-triage">[code]</a></li>
+  <li><a href="https://doi.org/10.1109/ICCSAI64074.2025.11064720"><i>A hybrid classical-quantum model for enhanced MRI-based brain tumor classification using transfer learning and quantum neural networks.</i></a> IEEE ICCSAI 2025 (co-author).</li>
+  <li><b>S. Ghosh</b>, C. Parikshith, F. Yasmeen, A. K. Srivastava, S. Sharma, N. Sharma. <a href="https://doi.org/10.1109/AKGEC62572.2024.10868917"><i>Real-time brain signals monitoring system using single-channel EEG for BCI applications.</i></a> IEEE AKGEC 2024.</li>
+  <li>P. Chavakula, <b>S. Ghosh</b>, N. Sharma, D. Kumar. <a href="https://doi.org/10.1109/INSPECT63485.2024.10896072"><i>Development of a haptic exo-suit with tactile feedback in hand rehabilitation.</i></a> IEEE INSPECT 2024.</li>
+</ul>
+
+<h2>Featured Research</h2>
+<div class="entry">
+  <div class="row"><b>Low-channel EEG for cognitive triage</b><i class="small">GlobalSouthAI @ NeurIPS 2026 &bull; IIT (BHU), IMS BHU</i></div>
+  <p class="desc">Studied how far a clinical EEG can be simplified for cognitive screening, using memory-clinic recordings re-derived to simulate low-channel devices and independent cohorts from other hospitals. A few well-placed electrodes screened about as well as the full clinical montage, and EEG added value beyond age alone; detecting mild cognitive impairment remains an open problem. Proposes a simplified recording design for prospective device studies.</p>
+</div>
+
+<h2>Current Research</h2>
+<ul>
+  <li><b>Low-channel EEG screening for dementia:</b> electrode placement, sampling and output design for cognitive triage devices, tested at hospitals not used in training.</li>
+  <li><b>Epilepsy monitoring and seizure forecasting:</b> patient-adaptive EEG monitoring and probabilistic forecasting of seizure risk.</li>
+  <li><b>Wearable monitoring and ECG (Hridae):</b> wearable devices, ECG models and patient-specific heart models for precision cardiology and neurology.</li>
+  <li><b>Automated medical image processing:</b> automated pipelines that prepare and analyse images across medical imaging modalities.</li>
+  <li><b>Local AI agents:</b> lightweight agents on an 8 GB laptop GPU for coding, research and document work.</li>
+  <li><b>Offline cognitive assessment:</b> browser-based battery across eleven cognitive domains with on-device measures and within-person change tracking.</li>
+</ul>
+
+<h2>Selected Projects</h2>
+<div class="entry"><div class="row"><b>GenEEG: patient-adaptive synthetic EEG</b><i class="small">IIT (BHU)</i></div>
+  <p class="desc">Latent diffusion that generates synthetic seizure EEG, with continual learning one patient at a time. <a href="https://github.com/soinikghosh9/GenEEG">[code]</a></p></div>
+<div class="entry"><div class="row"><b>Hridayam: AI-assisted non-invasive cardiovascular imaging</b><i class="small">Smart India Hackathon 2024, Winner</i></div>
+  <p class="desc">Multi-sensor, point-of-care cardiovascular screening prototype. <a href="https://github.com/soinikghosh9/Hridayam">[code]</a></p></div>
+<div class="entry"><div class="row"><b>Firefly: VR-guided robotic exosuit for stroke rehabilitation</b><i class="small">PRAGATI Hackathon 2023, 2nd runner-up</i></div>
+  <p class="desc">VR environment coupled to a robotic exoskeleton. <a href="https://github.com/soinikghosh9/Firefly">[code]</a></p></div>
+<div class="entry"><div class="row"><b>Motor-imagery BCI for prosthetic control</b><i class="small">IIT (BHU)</i></div>
+  <p class="desc">Translates motor-imagery EEG into prosthetic arm commands in real time, decoding live on a Raspberry Pi 5.</p></div>
+<div class="entry"><div class="row"><b>GemSAM: explainable multimodal image analysis on edge hardware</b><i class="small">Kaggle MedGemma Impact Challenge 2026</i></div>
+  <p class="desc">Agentic pipeline combining MedGemma and SAM 2. <a href="https://github.com/soinikghosh9/GemSAM">[code]</a></p></div>
+<div class="entry"><div class="row"><b>CogniDhi and HippoSphere AI</b><i class="small">Stanford Longevity Design Challenge 2025–26; MIT Media Lab Moodeng AI Challenge</i></div>
+  <p class="desc">Cognitive health platform; lightweight computer vision for animal behaviour monitoring. <a href="https://cogni-dhi.vercel.app/">[CogniDhi]</a> <a href="https://github.com/soinikghosh9/hipposphere-ai">[HippoSphere]</a></p></div>
+
+<h2>Skills</h2>
+<div class="skills">
+  <b>Signals &amp; models</b><span>EEG, ECG and PCG processing; qEEG and spectral features; ICA artefact handling; source connectivity; GNNs; latent diffusion; continual and patient-adaptive learning; medical image processing; LLM-based agents</span>
+  <b>Evaluation</b><span>Subject-grouped cross-validation; external-cohort testing; shortcut and confound checks; paired bootstrap and permutation tests; calibration</span>
+  <b>Engineering</b><span>Python, PyTorch, MNE, MATLAB, C/C++, C#, TypeScript, React, GCP; embedded EEG, low-noise PCB design, Raspberry Pi and microcontrollers; Unity VR/XR</span>
+  <b>Clinical &amp; lab</b><span>Clinical study design and ethics applications; clinician review workflows; cell culture, molecular biology, animal studies</span>
+</div>
+
+<h2>Honours &amp; Training</h2>
+<ul>
+  <li><b>Winner</b>, Smart India Hackathon 2024 (Hardware Edition), Government of India.</li>
+  <li><b>2nd Runner-up</b>, PRAGATI Hackathon 2023, iHub Drishti (TIH), IIT Jodhpur.</li>
+  <li><b>GATE 2023</b>, Life Sciences, All India Rank 1313.</li>
+  <li>g.tec BCI &amp; Neurotechnology Spring School 2025: invasive and non-invasive BCI.</li>
+  <li>Neurogati / CNS Lab, IIT Madras: computational brain modelling and brain-inspired AI.</li>
+  <li>SERB Karyashala, IIT Roorkee: AI in human brain-computer interaction.</li>
+  <li>CSIR-IICB Skill Development Programme: molecular cloning, protein expression and characterisation.</li>
+</ul>
+
+<h2>Beyond Science</h2>
+<p class="desc">Independent artist, musician and filmmaker (<a href="https://open.spotify.com/artist/3VprLdYpRRnk0ymHHozFOb/">music</a>, <a href="https://www.imdb.com/name/nm14161356/">IMDb</a>).</p>
+</body>
+</html>
