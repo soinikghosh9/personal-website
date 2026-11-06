@@ -1,6 +1,6 @@
 # Soinik Ghosh
 
-> PhD researcher in biomedical engineering at IIT (BHU) Varanasi, India, working on AI for clinical neurophysiology and medical imaging. Co-Founder of Hridae Medical Technologies (https://hridae.com/), which develops wearable monitoring and ECG models for precision cardiology and neurology.
+> PhD researcher in biomedical engineering at IIT (BHU) Varanasi, India, working on AI for clinical neurophysiology and medical imaging. Co-Founder of Hridae Medical Technologies (https://hridae.com/), which develops wearable monitoring, ECG models and ML-accelerated digital twins from medical images for precision cardiology and neurology.
 
 Soinik Ghosh's PhD at the School of Biomedical Engineering, IIT (BHU) Varanasi, develops EEG-based screening, triage and clinical decision-support tools for dementia and epilepsy. The aim is tools that are interpretable (a clinician can see which signal features led to a result) and that keep working on patients from hospitals not used to build them. Soinik collaborates with clinicians and researchers at the Institute of Medical Sciences (BHU), AIIMS New Delhi, IIT Kanpur and IIT Kharagpur, and studied physiology and neuroscience at the University of Calcutta (M.Sc Physiology, B.Sc Human Physiology) before moving into engineering.
 
@@ -9,8 +9,8 @@ Soinik Ghosh's PhD at the School of Biomedical Engineering, IIT (BHU) Varanasi, 
 - Screening and triage for dementia: EEG tools that help clinicians decide who needs a full cognitive assessment, using simpler recordings.
 - Epilepsy monitoring and seizure forecasting: patient-adaptive methods to detect seizures and estimate when seizure risk is rising.
 - Automated medical image processing: pipelines that prepare, check and analyse images across medical imaging modalities.
-- Lightweight local AI agents: agentic workflows for coding, research and document work that run on an 8 GB laptop GPU, so data stay on the device.
-- Hridae: wearable monitoring devices, ECG models, patient-specific heart models and analysis software for precision cardiology and neurology.
+- A lightweight local agentic harness: a harness and orchestration layer on open models, for long and complex tasks, that runs on an 8 GB laptop GPU, so data stay on the device.
+- Hridae: wearable monitoring devices, ECG models, ML-accelerated digital twins from medical images and analysis software for precision cardiology and neurology.
 - Cognitive assessment app: short offline cognitive tasks that track change in each person over time, to support screening.
 
 ## Featured paper
